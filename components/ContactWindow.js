@@ -16,12 +16,16 @@ const ContactWindow = ({ setContact }) => {
             </div>
           </div>
           <hr className="separator" />
-          <div className="box-formulario">
+          <form
+            className="box-formulario"
+            action="https://formsubmit.co/francescoaltx5@gmail.com"
+            method="POST"
+          >
             <div className="box">
               <input
                 type="text"
                 required
-                name="Name"
+                name="name"
                 id=""
                 className="input"
                 placeholder="Name"
@@ -31,7 +35,7 @@ const ContactWindow = ({ setContact }) => {
               <input
                 type="email"
                 required
-                name="Email"
+                name="email"
                 id="input2"
                 className="input"
                 placeholder="Email"
@@ -51,7 +55,7 @@ const ContactWindow = ({ setContact }) => {
             <div className="box-submit">
               <input type="submit" value="Submit" className="btn-submit" />
             </div>
-          </div>
+          </form>
         </div>
       </div>
       <style jsx>{`
