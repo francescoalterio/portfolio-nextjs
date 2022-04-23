@@ -145,6 +145,7 @@ const Nav = () => {
           flex: 0 0 auto;
           cursor: pointer;
           border: none;
+          font-size: 17px;
         }
 
         .mobile-menu {
