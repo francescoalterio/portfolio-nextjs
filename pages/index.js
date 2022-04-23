@@ -19,7 +19,12 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <title>Portfolio</title>
+        <meta
+          name="description"
+          content="
+All projects and skills of Francesco Alterio"
+        />
+        <title>Francesco Alterio | Portfolio</title>
       </Head>
 
       <Nav />
