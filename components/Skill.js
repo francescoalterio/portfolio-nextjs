@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 
 const Skill = ({ src, href, alt, technology }) => {
   const [hover, setHover] = useState(false);

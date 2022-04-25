@@ -1,14 +1,17 @@
 import React from "react";
 import BgPresentation from "./BgPresentation";
+import Image from "next/image";
 
 const Presentation = () => {
   return (
     <>
       <BgPresentation>
         <div className="marco-yo">
-          <img
-            className="yo"
-            src="../images/yo-blanco.jpg"
+          <Image
+            src="/images/yo-blanco.jpg"
+            style={{ borderRadius: "9999px" }}
+            height={225}
+            width={225}
             alt="francesco-alterio-caricatura"
           />
         </div>
@@ -27,9 +30,7 @@ const Presentation = () => {
         }
 
         .yo {
-          width: 225px;
-          height: 225px;
-          border-radius: 200px;
+          border-radius: 9999px;
         }
 
         .marco-yo:hover {

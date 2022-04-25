@@ -11,7 +11,7 @@ const Skillsets = () => {
         <hr className="separator-skillset" />
         <div className="box-skillset">
           <Skill
-            src={"/../images/technologies/html.svg"}
+            src={"/images/technologies/html.svg"}
             href={
               "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
             }
@@ -19,25 +19,25 @@ const Skillsets = () => {
             technology="HTML"
           />
           <Skill
-            src={"/../images/technologies/css.svg"}
+            src={"/images/technologies/css.svg"}
             href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
             alt={"img-css3-logo"}
             technology="CSS"
           />
           <Skill
-            src={"/../images/technologies/javascript-2752148-2284965.png"}
+            src={"/images/technologies/javascript-2752148-2284965.png"}
             href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
             alt={"img-javascript-logo"}
             technology="Javascript"
           />
           <Skill
-            src={"/../images/technologies/react-logo.png"}
+            src={"/images/technologies/react-logo.png"}
             href={"https://reactjs.org/"}
             alt={"img-react-logo"}
             technology="React"
           />
           <Skill
-            src={"/../images/technologies/tailwind-logo.png"}
+            src={"/images/technologies/tailwind-logo.png"}
             href={"https://tailwindcss.com/"}
             alt={"img-tailwind-logo"}
             technology="Tailwindcss"

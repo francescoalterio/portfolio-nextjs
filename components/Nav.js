@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MobileNav from "../components/MobileNav";
 import ContactWindow from "./ContactWindow";
+import Image from "next/image";
 
 const Nav = () => {
   const [contact, setContact] = useState(false);
@@ -18,9 +19,11 @@ const Nav = () => {
       <nav className="navegation">
         <div className="box-logo">
           <a href="#" className="a-logo ">
-            <img
-              className="yo-logo"
-              src="../images/yo-blanco.jpg"
+            <Image
+              src="/images/yo-blanco.jpg"
+              style={{ borderRadius: "9999px" }}
+              height={36}
+              width={36}
               alt="francesco-alterio-caricatura"
             />
           </a>
