@@ -30,6 +30,10 @@ export default function Home() {
           content="All projects and skills of Francesco Alterio"
         />
         <meta
+          property="og:url"
+          content="https://francescoalterio.vercel.app/"
+        />
+        <meta
           property="og:image"
           content="https://francescoalterio.vercel.app/images/yo-blanco.jpg"
         />
