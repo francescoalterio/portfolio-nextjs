@@ -23,7 +23,6 @@ export default function Home() {
           name="description"
           content="All projects and skills of Francesco Alterio"
         />
-        <meta name="robots" content="noindex,nofollow" />
         <meta property="og:title" content="Francesco Alterio | Portfolio" />
         <meta
           property="og:description"
