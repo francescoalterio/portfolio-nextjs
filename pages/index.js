@@ -29,6 +29,7 @@ export default function Home() {
           property="og:description"
           content="All projects and skills of Francesco Alterio"
         />
+        <meta property="og:image" content="../yo-blanco-modified.png" />
         <title>Francesco Alterio | Portfolio</title>
       </Head>
 
