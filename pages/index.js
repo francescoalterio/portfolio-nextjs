@@ -21,8 +21,7 @@ export default function Home() {
         ></meta>
         <meta
           name="description"
-          content="
-All projects and skills of Francesco Alterio"
+          content="All projects and skills of Francesco Alterio"
         />
         <meta name="robots" content="noindex,nofollow" />
         <title>Francesco Alterio | Portfolio</title>
