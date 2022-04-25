@@ -26,7 +26,7 @@ const Nav = () => {
           </a>
         </div>
         <div className="box-nombre">
-          <h2 className="nombre">Francesco Alterio</h2>
+          <h1 className="nombre">Francesco Alterio</h1>
         </div>
         <div className="ampliador"></div>
         <div className="box-links">
