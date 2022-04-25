@@ -31,7 +31,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://francescoalterio.vercel.app/yo-blanco-modified.png"
+          content="https://francescoalterio.vercel.app/images/yo-blanco.jpg"
         />
         <title>Francesco Alterio | Portfolio</title>
       </Head>
