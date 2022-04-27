@@ -19,6 +19,14 @@ const Proyects = () => {
             repo="https://github.com/francescoalterio/react-study-panel"
           />
           <Proyect
+            name="Francesco Pomodoro"
+            src="../images/proyects/francescopomodoro.png"
+            alt="img-francescopomodoro"
+            description="Clock pomodoro to increase the productivity of your study"
+            preview="https://francescopomodoro.netlify.app/"
+            repo="https://github.com/francescoalterio/pomodoro-timer"
+          />
+          <Proyect
             name="Most Famous Cryptocurrencies"
             src="../images/proyects/cryptoproyect.png"
             alt="img-cryptoproyect"
