@@ -42,6 +42,12 @@ const Skillsets = () => {
             alt={"img-tailwind-logo"}
             technology="Tailwindcss"
           />
+          <Skill
+            src={"/images/technologies/git.webp"}
+            href={"https://git-scm.com/"}
+            alt={"img-git-logo"}
+            technology="Git"
+          />
         </div>
       </section>
       <style jsx>{`
