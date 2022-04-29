@@ -3,7 +3,7 @@ import React from "react";
 const BgPresentation = ({ children }) => {
   return (
     <>
-      <div className="presentation">{children}</div>
+      <header className="presentation">{children}</header>
       <style jsx>{`
         .presentation {
           background-color: #f0f0f0;

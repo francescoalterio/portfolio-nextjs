@@ -43,13 +43,15 @@ export default function Home() {
 
       <Presentation />
 
-      <Scope />
+      <main>
+        <Scope />
 
-      <Proyects />
+        <Proyects />
 
-      <Skillsets />
+        <Skillsets />
 
-      <CoreTech />
+        <CoreTech />
+      </main>
 
       <Footer />
       <style global jsx>{`

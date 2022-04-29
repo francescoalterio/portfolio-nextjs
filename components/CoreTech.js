@@ -30,7 +30,7 @@ const CoreTech = () => {
             <img
               className="img-coretech"
               src="http://www.inos.cl/images/programas/react.png"
-              alt="logo-node.js"
+              alt="logo-react.js"
             />
           </div>
         </div>
