@@ -90,7 +90,7 @@ const Nav = () => {
           top: 0;
           display: flex;
           /* box-shadow: 0 3px 10px #181818; */
-          z-index: 10;
+          z-index: 20;
           align-items: center;
         }
 

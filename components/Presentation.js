@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import BgPresentation from "./BgPresentation";
 
@@ -6,7 +7,7 @@ const Presentation = () => {
     <>
       <BgPresentation>
         <div className="marco-yo">
-          <img
+          <Image
             src="/images/yo-blanco.jpg"
             style={{ borderRadius: "9999px" }}
             height={225}

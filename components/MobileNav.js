@@ -30,6 +30,7 @@ const MobileNav = ({ mobileMenuDeploy }) => {
           transition: 1s;
           box-shadow: 0 0 10px black;
           display: none;
+          z-index: 10;
         }
 
         .agregar-nav-mobile {
