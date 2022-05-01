@@ -48,6 +48,12 @@ const Skillsets = () => {
             alt={"img-git-logo"}
             technology="Git"
           />
+          <Skill
+            src={"/images/technologies/next.png"}
+            href={"https://nextjs.org/"}
+            alt={"img-nextjs-logo"}
+            technology="Next.js"
+          />
         </div>
       </section>
       <style jsx>{`
