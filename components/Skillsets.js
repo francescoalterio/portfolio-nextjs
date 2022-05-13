@@ -54,6 +54,12 @@ const Skillsets = () => {
             alt={"img-nextjs-logo"}
             technology="Next.js"
           />
+          <Skill
+            src={"/images/technologies/react-logo.png"}
+            href={"https://reactnative.dev/"}
+            alt={"img-reactnative-logo"}
+            technology="React Native"
+          />
         </div>
       </section>
       <style jsx>{`
