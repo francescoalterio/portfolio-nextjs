@@ -11,6 +11,16 @@ const Proyects = () => {
         <hr className="separator" />
         <div className="box-proyectos">
           <Proyect
+            name="Dualsend"
+            src="../images/proyects/dualsend.png"
+            alt="img-dualsend"
+            description="
+            
+Program that allows you to send files of any type between a pc and a mobile with react native and expressjs"
+            preview=""
+            repo="https://github.com/francescoalterio/dualsend-mobileapp"
+          />
+          <Proyect
             name="Study Panel"
             src="../images/proyects/studypanel.png"
             alt="img-studypanel"
@@ -22,7 +32,7 @@ const Proyects = () => {
             name="Francesco Pomodoro"
             src="../images/proyects/francescopomodoro.png"
             alt="img-francescopomodoro"
-            description="Clock pomodoro to increase the productivity of your study"
+            description="Clock pomodoro to increase the productivity of your study using React"
             preview="https://francescopomodoro.netlify.app/"
             repo="https://github.com/francescoalterio/pomodoro-timer"
           />
@@ -30,7 +40,7 @@ const Proyects = () => {
             name="Most Famous Cryptocurrencies"
             src="../images/proyects/cryptoproyect.png"
             alt="img-cryptoproyect"
-            description="Web that shows the price of the 10 cryptocurrencies with the most volume in real time"
+            description="Web that shows the price of the 10 cryptocurrencies with the most volume in real time using React"
             preview="https://cryptocurrencylist.stackblitz.io/"
             repo="https://github.com/francescoalterio/react-cryptocurrencylist"
           />
@@ -39,7 +49,7 @@ const Proyects = () => {
             src="../images/proyects/smitefilter.png"
             alt="img-proyecto"
             description="
-            Filter of gods for the video game Smite"
+            Filter of gods for the video game Smite using Javscript vanilla"
             preview="https://francescoalterio.github.io/smitefilter/"
             repo="https://github.com/francescoalterio/smitefilter"
           />
