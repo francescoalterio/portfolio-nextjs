@@ -40,7 +40,7 @@ const WindowProyect = ({
             <div className="box-a">
               {preview ? (
                 <a href={preview} className="redireccion" target="_blank">
-                  Visit Page
+                  Preview
                 </a>
               ) : null}
               <a href={repo} className="redireccion" target="_blank">

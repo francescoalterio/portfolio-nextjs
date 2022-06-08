@@ -11,12 +11,18 @@ const Proyects = () => {
         <hr className="separator" />
         <div className="box-proyectos">
           <Proyect
+            name="Project Manager"
+            src="../images/proyects/project-manager.png"
+            alt="img-project-manager"
+            description="Program that allows you to manage all the tasks and versions of your projects with react native, react navigation and redux."
+            preview="https://www.youtube.com/watch?v=YvWt-w5EJw4"
+            repo="https://github.com/francescoalterio/project-manager"
+          />
+          <Proyect
             name="Dualsend"
             src="../images/proyects/dualsend.png"
             alt="img-dualsend"
-            description="
-            
-Program that allows you to send files of any type between a pc and a mobile with react native and expressjs"
+            description="Program that allows you to send files of any type between a pc and a mobile with react native and expressjs"
             preview=""
             repo="https://github.com/francescoalterio/dualsend-mobileapp"
           />
