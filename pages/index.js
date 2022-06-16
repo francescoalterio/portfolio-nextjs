@@ -54,6 +54,7 @@ export default function Home() {
       </main>
 
       <Footer />
+
       <style global jsx>{`
         html {
           overflow-y: scroll;
