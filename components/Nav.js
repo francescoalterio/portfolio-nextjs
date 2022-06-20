@@ -39,6 +39,9 @@ const Nav = () => {
           <Link href="#skillset">
             <a className="a">Skillset</a>
           </Link>
+          <Link href="#videos">
+            <a className="a">Videos</a>
+          </Link>
           <Link href="#coretech">
             <a className="a">Core Technology</a>
           </Link>
@@ -102,7 +105,7 @@ const Nav = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-left: 60px;
+          margin-left: 20px;
           background-color: #6e52f5;
           width: 50px;
           height: 50px;
@@ -144,7 +147,7 @@ const Nav = () => {
           font-weight: 700;
           transition: 0.2s;
           background-color: #6e52f5;
-          margin-right: 60px;
+          margin-right: 20px;
           flex: 0 0 auto;
           cursor: pointer;
           border: none;
@@ -152,7 +155,7 @@ const Nav = () => {
         }
 
         .mobile-menu {
-          margin-right: 60px;
+          margin-right: 20px;
           display: flex;
           justify-content: center;
           align-items: center;

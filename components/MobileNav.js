@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const MobileNav = ({ mobileMenuDeploy }) => {
   return (
@@ -9,15 +10,26 @@ const MobileNav = ({ mobileMenuDeploy }) => {
         }
       >
         <div className="box-nav-mobile">
-          <a href="#proyects" className="a-mobile" id="a-mobile-1">
-            Proyects
-          </a>
-          <a href="#skillset" className="a-mobile" id="a-mobile-2">
-            Skillset
-          </a>
-          <a href="#coretech" className="a-mobile" id="a-mobile-3">
-            Core Technology
-          </a>
+          <Link href="#proyects">
+            <a className="a-mobile" id="a-mobile-1">
+              Proyects
+            </a>
+          </Link>
+          <Link href="#skillset">
+            <a className="a-mobile" id="a-mobile-2">
+              Skillset
+            </a>
+          </Link>
+          <Link href="#videos">
+            <a className="a-mobile" id="a-mobile-1">
+              Videos
+            </a>
+          </Link>
+          <Link href="#coretech">
+            <a className="a-mobile" id="a-mobile-3">
+              Core Technology
+            </a>
+          </Link>
         </div>
       </div>
       <style jsx>{`

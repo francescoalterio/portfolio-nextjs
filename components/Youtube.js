@@ -5,7 +5,7 @@ import Video from "./Video";
 const Youtube = ({ videos }) => {
   return (
     <>
-      <section className="portafolio" id="videos">
+      <section className="videos" id="videos">
         <div className="box-title">
           <h2 className="title">MY LAST VIDEOS</h2>
         </div>
@@ -17,7 +17,7 @@ const Youtube = ({ videos }) => {
         </div>
       </section>
       <style jsx>{`
-        .portafolio {
+        .videos {
           background-color: rgb(240, 240, 240);
           width: 100%;
           display: flex;
@@ -87,7 +87,7 @@ const Youtube = ({ videos }) => {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          padding: 30px 0 0 0;
+          padding: 40px 0 0 0;
           justify-content: space-evenly;
           align-items: center;
         }
