@@ -1,24 +1,18 @@
 import React, { useState } from "react";
 import WindowProyect from "./WindowProyect";
+import Link from "next/link";
 
-const Proyect = ({ name, src, alt, description, preview, repo }) => {
-  const [viewProyect, setViewProyect] = useState(false);
+const Proyect = ({ name, src, alt, id }) => {
   return (
     <>
-      <div className="proyecto" onClick={() => setViewProyect(true)}>
-        <img src={src} alt={alt} className="img-proyecto" />
-      </div>
-      {viewProyect && (
-        <WindowProyect
-          name={name}
-          src={src}
-          alt={alt}
-          description={description}
-          preview={preview}
-          repo={repo}
-          setViewProyect={setViewProyect}
-        />
-      )}
+      <Link href={`/project/${id}`}>
+        <a>
+          <div className="proyecto">
+            <img src={src} alt={alt} className="img-proyecto" />
+          </div>
+        </a>
+      </Link>
+
       <style jsx>{`
         .proyecto {
           margin: 12px 0px;
