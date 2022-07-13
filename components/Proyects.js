@@ -1,64 +1,26 @@
 import React from "react";
 import Proyect from "./Proyect";
+import { projectsDB } from "../projects";
 
 const Proyects = () => {
+  const projectsReversed = [...projectsDB].reverse();
   return (
     <>
       <section className="portafolio" id="proyects">
         <div className="box-title">
-          <h2 className="title">PROYECTS</h2>
+          <h2 className="title">PROJECTS</h2>
         </div>
         <hr className="separator" />
         <div className="box-proyectos">
-          <Proyect
-            name="Project Manager"
-            src="../images/proyects/project-manager.png"
-            alt="img-project-manager"
-            description="Program that allows you to manage all the tasks and versions of your projects with react native, react navigation and redux."
-            preview="https://www.youtube.com/watch?v=YvWt-w5EJw4"
-            repo="https://github.com/francescoalterio/project-manager"
-          />
-          <Proyect
-            name="Dualsend"
-            src="../images/proyects/dualsend.png"
-            alt="img-dualsend"
-            description="Program that allows you to send files of any type between a pc and a mobile with react native and expressjs"
-            preview=""
-            repo="https://github.com/francescoalterio/dualsend-mobileapp"
-          />
-          <Proyect
-            name="Study Panel"
-            src="../images/proyects/studypanel.png"
-            alt="img-studypanel"
-            description="Panel study on web technologies using React and Firebase"
-            preview="https://studypanel.vercel.app/"
-            repo="https://github.com/francescoalterio/react-study-panel"
-          />
-          <Proyect
-            name="Francesco Pomodoro"
-            src="../images/proyects/francescopomodoro.png"
-            alt="img-francescopomodoro"
-            description="Clock pomodoro to increase the productivity of your study using React"
-            preview="https://francescopomodoro.netlify.app/"
-            repo="https://github.com/francescoalterio/pomodoro-timer"
-          />
-          <Proyect
-            name="Most Famous Cryptocurrencies"
-            src="../images/proyects/cryptoproyect.png"
-            alt="img-cryptoproyect"
-            description="Web that shows the price of the 10 cryptocurrencies with the most volume in real time using React"
-            preview="https://cryptocurrencylist.stackblitz.io/"
-            repo="https://github.com/francescoalterio/react-cryptocurrencylist"
-          />
-          <Proyect
-            name="Smite Filter"
-            src="../images/proyects/smitefilter.png"
-            alt="img-proyecto"
-            description="
-            Filter of gods for the video game Smite using Javscript vanilla"
-            preview="https://francescoalterio.github.io/smitefilter/"
-            repo="https://github.com/francescoalterio/smitefilter"
-          />
+          {projectsReversed.map((x) => (
+            <Proyect
+              key={x.id}
+              name={x.name}
+              src={x.src}
+              alt={x.alt}
+              id={x.id}
+            />
+          ))}
         </div>
       </section>
       <style jsx>{`

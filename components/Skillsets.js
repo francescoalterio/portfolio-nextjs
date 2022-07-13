@@ -17,48 +17,56 @@ const Skillsets = () => {
             }
             alt={"img-html5-logo"}
             technology="HTML"
+            size={120}
           />
           <Skill
             src={"/images/technologies/css.svg"}
             href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
             alt={"img-css3-logo"}
             technology="CSS"
+            size={120}
           />
           <Skill
             src={"/images/technologies/javascript-2752148-2284965.png"}
             href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
             alt={"img-javascript-logo"}
             technology="Javascript"
+            size={120}
           />
           <Skill
             src={"/images/technologies/react-logo.png"}
             href={"https://reactjs.org/"}
             alt={"img-react-logo"}
             technology="React"
+            size={120}
           />
           <Skill
             src={"/images/technologies/tailwind-logo.png"}
             href={"https://tailwindcss.com/"}
             alt={"img-tailwind-logo"}
             technology="Tailwindcss"
+            size={120}
           />
           <Skill
             src={"/images/technologies/git.webp"}
             href={"https://git-scm.com/"}
             alt={"img-git-logo"}
             technology="Git"
+            size={120}
           />
           <Skill
             src={"/images/technologies/next.png"}
             href={"https://nextjs.org/"}
             alt={"img-nextjs-logo"}
             technology="Next.js"
+            size={120}
           />
           <Skill
             src={"/images/technologies/react-logo.png"}
             href={"https://reactnative.dev/"}
             alt={"img-reactnative-logo"}
             technology="React Native"
+            size={120}
           />
         </div>
       </section>

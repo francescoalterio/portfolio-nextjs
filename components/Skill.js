@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Skill = ({ src, href, alt, technology }) => {
+const Skill = ({ src, href, alt, technology, size, needPadding }) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -14,17 +14,17 @@ const Skill = ({ src, href, alt, technology }) => {
             className="img-skillset"
             src={src}
             alt={alt}
-            width={120}
-            height={120}
+            width={size}
+            height={size}
           />
           <span>{technology}</span>
         </div>
       </a>
       <style jsx>{`
         .tecnologia {
-          width: 120px;
-          height: 120px;
-          margin: 25px 25px;
+          width: ${size}px;
+          height: ${size}px;
+          margin: ${size < 120 ? "10px" : "25px 25px"};
           transition: 0.2s;
           text-decoration: none;
           color: white;
@@ -32,12 +32,13 @@ const Skill = ({ src, href, alt, technology }) => {
           flex-flow: column;
           align-items: center;
           background-color: #383838;
-          border-radius: 40px;
+          border-radius: 20px;
         }
 
         .img-skillset {
-          border-radius: 40px;
+          border-radius: 20px;
           box-shadow: 1px 0.5px 20px rgb(61, 61, 61);
+          padding: ${needPadding ? "10px" : undefined};
         }
 
         div {
@@ -54,8 +55,9 @@ const Skill = ({ src, href, alt, technology }) => {
           top: -40px;
           left: 0;
           background-color: #383838;
-          border-radius: 50px;
+          border-radius: 5px;
           transition: 2s;
+          font-size: ${size < 120 ? 10 : 15}px;
         }
 
         span::after {
