@@ -11,7 +11,7 @@ const Youtube = ({ videos }) => {
         </div>
         <hr className="separator" />
         <div className="box-videos">
-          {videos.map((video) => (
+          {videos?.map((video) => (
             <Video youtubeVideo={video} />
           ))}
         </div>
