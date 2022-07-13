@@ -12,7 +12,7 @@ const MobileNav = ({ mobileMenuDeploy }) => {
         <div className="box-nav-mobile">
           <Link href="#proyects">
             <a className="a-mobile" id="a-mobile-1">
-              Proyects
+              Projects
             </a>
           </Link>
           <Link href="#skillset">
