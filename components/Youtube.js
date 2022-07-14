@@ -11,7 +11,9 @@ const Youtube = ({ videos }) => {
         <hr className="separator" />
         <div className="box-videos">
           {videos
-            ? videos.map((video) => <Video youtubeVideo={video} />)
+            ? videos.map((video) => (
+                <Video key={video.id.videoId} youtubeVideo={video} />
+              ))
             : "Sorry, Youtube api requests exceeded."}
         </div>
       </section>
