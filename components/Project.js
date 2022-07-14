@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import WindowProyect from "./WindowProyect";
 import Link from "next/link";
 
-const Proyect = ({ name, src, alt, id }) => {
+const Project = ({ name, src, alt, id }) => {
   return (
     <>
       <Link href={`/project/${id}`}>
@@ -52,5 +51,5 @@ const Proyect = ({ name, src, alt, id }) => {
   );
 };
 
-export default Proyect;
+export default Project;
 9;

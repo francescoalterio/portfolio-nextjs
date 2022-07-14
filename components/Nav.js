@@ -33,7 +33,7 @@ const Nav = () => {
         </div>
         <div className="ampliador"></div>
         <div className="box-links">
-          <Link href="#proyects" scroll={false}>
+          <Link href="#projects" scroll={false}>
             <a className="a">Projects</a>
           </Link>
           <Link href="#skillset">

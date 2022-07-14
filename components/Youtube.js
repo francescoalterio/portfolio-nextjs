@@ -1,5 +1,4 @@
 import React from "react";
-import Proyect from "./Proyect";
 import Video from "./Video";
 
 const Youtube = ({ videos }) => {

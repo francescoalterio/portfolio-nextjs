@@ -5,10 +5,9 @@ import CoreTech from "../components/CoreTech";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Presentation from "../components/Presentation";
-import Proyects from "../components/Proyects";
+import Projects from "../components/Projects";
 import Scope from "../components/Scope";
 import Skillsets from "../components/Skillsets";
-import WindowProyect from "../components/WindowProyect";
 import Youtube from "../components/Youtube";
 
 export default function Home({ youtubeData }) {
@@ -48,7 +47,7 @@ export default function Home({ youtubeData }) {
       <main>
         <Scope />
 
-        <Proyects />
+        <Projects />
 
         <Skillsets />
 

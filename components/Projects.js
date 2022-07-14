@@ -1,19 +1,19 @@
 import React from "react";
-import Proyect from "./Proyect";
+import Project from "./project";
 import { projectsDB } from "../projects";
 
-const Proyects = () => {
+const Projects = () => {
   const projectsReversed = [...projectsDB].reverse();
   return (
     <>
-      <section className="portafolio" id="proyects">
+      <section className="portafolio" id="projects">
         <div className="box-title">
           <h2 className="title">PROJECTS</h2>
         </div>
         <hr className="separator" />
         <div className="box-proyectos">
           {projectsReversed.map((x) => (
-            <Proyect
+            <Project
               key={x.id}
               name={x.name}
               src={x.src}
@@ -110,4 +110,4 @@ const Proyects = () => {
   );
 };
 
-export default Proyects;
+export default Projects;
