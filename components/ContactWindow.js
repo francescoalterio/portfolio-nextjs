@@ -18,7 +18,7 @@ const ContactWindow = ({ setContact }) => {
           <hr className="separator" />
           <form
             className="box-formulario"
-            action="https://formsubmit.co/francescoaltx5@gmail.com"
+            action="https://formsubmit.co/francescoalteriog@gmail.com"
             method="POST"
           >
             <div className="box">
