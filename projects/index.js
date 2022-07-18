@@ -53,6 +53,13 @@ export const projectsDB = [
         size={80}
       />,
       <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
         src={"/images/technologies/css.svg"}
         href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
         alt={"img-css3-logo"}
@@ -75,6 +82,13 @@ export const projectsDB = [
         href={"https://reactjs.org/"}
         alt={"img-react-logo"}
         technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
         size={80}
       />,
       <Skill
@@ -110,6 +124,13 @@ export const projectsDB = [
         href={"https://reactnative.dev/"}
         alt={"img-reactnative-logo"}
         technology="React Native"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
         size={80}
       />,
       <Skill
@@ -160,6 +181,13 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
         href={"https://reactnative.dev/"}
         alt={"img-reactnative-logo"}
         technology="React Native"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
         size={80}
       />,
       <Skill
@@ -216,6 +244,13 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
         href={"https://reactnative.dev/"}
         alt={"img-reactnative-logo"}
         technology="React Native"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
         size={80}
       />,
       <Skill
