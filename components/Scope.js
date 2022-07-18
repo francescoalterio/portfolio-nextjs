@@ -7,6 +7,9 @@ const Scope = () => {
         <div className="box-frontend">
           <h4 className="title-capacidad">Frontend Developer</h4>
         </div>
+        <div className="box-frontend">
+          <h4 className="title-capacidad">Mobile Developer</h4>
+        </div>
       </section>
       <style jsx>{`
         .capacidad {
@@ -21,11 +24,10 @@ const Scope = () => {
         .box-frontend {
           width: 200px;
           height: 100%;
-          margin: 0 20px 0 20px;
+          margin: 0 10px 0 10px;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 0 40px 0 40px;
         }
 
         .box-backend {
