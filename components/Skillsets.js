@@ -68,6 +68,14 @@ const Skillsets = () => {
             technology="React Native"
             size={120}
           />
+          <Skill
+            src={"/images/technologies/redux.png"}
+            href={"https://redux.js.org/"}
+            alt={"img-redux-logo"}
+            technology="Redux"
+            size={120}
+            needPadding
+          />
         </div>
       </section>
       <style jsx>{`
