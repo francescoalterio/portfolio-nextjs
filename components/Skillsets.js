@@ -143,7 +143,19 @@ const Skillsets = () => {
           justify-content: space-evenly;
           flex-wrap: wrap;
           min-height: 300px;
-          padding: 40px 0;
+          padding: 40px 20%;
+        }
+
+        @media (max-width: 850px) {
+          .box-skillset {
+            padding: 40px 10%;
+          }
+        }
+
+        @media (max-width: 650px) {
+          .box-skillset {
+            padding: 40px 40px;
+          }
         }
       `}</style>
     </>
