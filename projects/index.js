@@ -10,6 +10,7 @@ export const projectsDB = [
       "Filter of gods for the video game Smite using Javscript vanilla",
     preview: "https://francescoalterio.github.io/smitefilter/",
     repo: "https://github.com/francescoalterio/smitefilter",
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/html.svg"}
@@ -44,6 +45,7 @@ export const projectsDB = [
       "Clock pomodoro to increase the productivity of your study using React",
     preview: "https://francescopomodoro.netlify.app/",
     repo: "https://github.com/francescoalterio/pomodoro-timer",
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -76,6 +78,7 @@ export const projectsDB = [
     description: `Study panel for Web programming. It has a user system using Firebase and stores each of the technologies that you are learning and those learned.`,
     preview: "https://studypanel.vercel.app/",
     repo: "https://github.com/francescoalterio/react-study-panel",
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -118,6 +121,7 @@ export const projectsDB = [
     description: `Program that allows you to send files of any type between a PC and a mobile. You only need to start the server on the machine which has the core of the entire ecosystem, the app being the client with which to interact.`,
     preview: "",
     repo: "https://github.com/francescoalterio/dualsend-mobileapp",
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -175,6 +179,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
 7. Completion of projects and tasks.`,
     app: "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager",
     repo: "https://github.com/francescoalterio/project-manager",
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -238,6 +243,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   Filter pokemons by their types to learn more in depth.`,
     app: "https://play.google.com/store/apps/details?id=com.franstudios.pokebook",
     repo: "https://github.com/francescoalterio/pokebook",
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}

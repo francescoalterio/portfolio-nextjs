@@ -12,15 +12,17 @@ const Projects = () => {
         </div>
         <hr className="separator" />
         <div className="box-proyectos">
-          {projectsReversed.map((x) => (
-            <Project
-              key={x.id}
-              name={x.name}
-              src={x.src}
-              alt={x.alt}
-              id={x.id}
-            />
-          ))}
+          {projectsReversed
+            .filter((x) => x.isFavorite)
+            .map((x) => (
+              <Project
+                key={x.id}
+                name={x.name}
+                src={x.src}
+                alt={x.alt}
+                id={x.id}
+              />
+            ))}
         </div>
       </section>
       <style jsx>{`
