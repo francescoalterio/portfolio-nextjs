@@ -86,6 +86,14 @@ const Skillsets = () => {
             size={120}
             needPadding
           />
+          <Skill
+            src={"/images/technologies/react-navigation.png"}
+            href={"https://reactnavigation.org/"}
+            alt={"img-reactnavigation-logo"}
+            technology="React Navigation"
+            size={120}
+          />
+          ,
         </div>
       </section>
       <style jsx>{`
