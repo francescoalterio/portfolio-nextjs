@@ -9,8 +9,12 @@ import Projects from "../components/Projects";
 import Scope from "../components/Scope";
 import Skillsets from "../components/Skillsets";
 import Youtube from "../components/Youtube";
+import { projectsDB } from "../projects";
 
 export default function Home({ youtubeData }) {
+  const projectsReversed = [...projectsDB].reverse();
+  const favoriteProjects = projectsReversed.filter((x) => x.isFavorite);
+
   return (
     <>
       <Head>
@@ -47,7 +51,7 @@ export default function Home({ youtubeData }) {
       <main>
         <Scope />
 
-        <Projects />
+        <Projects projects={favoriteProjects} isFavorites />
 
         <Skillsets />
 

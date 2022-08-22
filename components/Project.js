@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Project = ({ name, src, alt, id }) => {
+  const router = useRouter();
   return (
     <>
-      <Link href={`/project/${id}`}>
+      <Link
+        href={{
+          pathname: !id ? "/projects" : `/projects/${id}`,
+          query: { lastPage: router.pathname },
+        }}
+      >
         <a>
           <div className="proyecto">
             <img src={src} alt={alt} className="img-proyecto" />

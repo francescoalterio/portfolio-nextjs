@@ -10,7 +10,7 @@ export const projectsDB = [
       "Filter of gods for the video game Smite using Javscript vanilla",
     preview: "https://francescoalterio.github.io/smitefilter/",
     repo: "https://github.com/francescoalterio/smitefilter",
-    isFavorite: true,
+    isFavorite: false,
     techs: [
       <Skill
         src={"/images/technologies/html.svg"}
@@ -35,9 +35,8 @@ export const projectsDB = [
       />,
     ],
   },
-
   {
-    id: 3,
+    id: 2,
     name: "Francesco Pomodoro",
     src: "../images/projects/francescopomodoro.png",
     alt: "img-francescopomodoro",
@@ -71,7 +70,7 @@ export const projectsDB = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     name: "Study Panel",
     src: "../images/projects/studypanel.png",
     alt: "img-studypanel",
@@ -114,7 +113,7 @@ export const projectsDB = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     name: "Dualsend",
     src: "../images/projects/dualsend.png",
     alt: "img-dualsend",
@@ -162,7 +161,7 @@ export const projectsDB = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: "Project Manager",
     src: "../images/projects/project-manager.png",
     alt: "img-project-manager",
@@ -220,7 +219,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: "PokeBook",
     src: "../images/projects/pokebook.png",
     alt: "img-pokebook",
@@ -243,6 +242,130 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   Filter pokemons by their types to learn more in depth.`,
     app: "https://play.google.com/store/apps/details?id=com.franstudios.pokebook",
     repo: "https://github.com/francescoalterio/pokebook",
+    isFavorite: true,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactnative.dev/"}
+        alt={"img-reactnative-logo"}
+        technology="React Native"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/redux.png"}
+        href={"https://redux.js.org/"}
+        alt={"img-redux-logo"}
+        technology="Redux"
+        size={80}
+        needPadding
+      />,
+      <Skill
+        src={"/images/technologies/react-navigation.png"}
+        href={"https://reactnavigation.org/"}
+        alt={"img-reactnavigation-logo"}
+        technology="React Navigation"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 7,
+    name: "IP Finder",
+    src: "../images/projects/ipfinder.png",
+    alt: "img-o",
+    description:
+      "IP Finder app allows you to locate the IP location of any IP address.IP Finder allows you to locate and search any IP anywhere in the world for free. The app provides you with a lot of information about the located IP such as location, time zone, etc.",
+    app: "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder",
+    repo: "https://github.com/francescoalterio/ip-finder",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactnative.dev/"}
+        alt={"img-reactnative-logo"}
+        technology="React Native"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/react-navigation.png"}
+        href={"https://reactnavigation.org/"}
+        alt={"img-reactnavigation-logo"}
+        technology="React Navigation"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 8,
+    name: "Fran Studios",
+    src: "../images/projects/fran-studios.png",
+    alt: "img-fran-studios",
+    description:
+      "Fran Studios was born from the idea of​ ​creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
+    preview: "https://franstudios.vercel.app/",
+    repo: "https://github.com/francescoalterio/fran-studios",
+    isFavorite: true,
+    techs: [
+      <Skill
+        src={"/images/technologies/next.png"}
+        href={"https://nextjs.org/"}
+        alt={"img-nextjs-logo"}
+        technology="Next.js"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 9,
+    name: "Cocktails Library",
+    src: "../images/projects/cocktails-library.png",
+    alt: "img-o",
+    description:
+      "Cocktail Recipe App is a mobile application that helps you find cocktail recipes and drink recipes.",
+    app: "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary",
+    repo: "https://github.com/francescoalterio/cocktails-app",
     isFavorite: true,
     techs: [
       <Skill

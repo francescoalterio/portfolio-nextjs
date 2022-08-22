@@ -8,16 +8,12 @@ import Link from "next/link";
 export default function project() {
   const [projectData, setProjectData] = useState();
   const router = useRouter();
-  console.log("router", router.query);
 
   useEffect(() => {
     const data = projectsDB.find((x) => x.id === Number(router.query.project));
     setProjectData(data);
   }, [router.query]);
 
-  useEffect(() => {
-    console.log(projectData);
-  }, [projectData]);
   return (
     <>
       <Head>
@@ -49,7 +45,9 @@ export default function project() {
           {projectData && (
             <div className="background">
               <nav className="navegation">
-                <Link href="/">
+                <Link
+                  href={router.query.lastPage ? router.query.lastPage : "/"}
+                >
                   <a className="a-logo ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

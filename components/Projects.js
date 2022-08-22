@@ -2,8 +2,7 @@ import React from "react";
 import Project from "./Project";
 import { projectsDB } from "../projects";
 
-const Projects = () => {
-  const projectsReversed = [...projectsDB].reverse();
+const Projects = ({ projects, isFavorites }) => {
   return (
     <>
       <section className="portafolio" id="projects">
@@ -12,17 +11,21 @@ const Projects = () => {
         </div>
         <hr className="separator" />
         <div className="box-proyectos">
-          {projectsReversed
-            .filter((x) => x.isFavorite)
-            .map((x) => (
-              <Project
-                key={x.id}
-                name={x.name}
-                src={x.src}
-                alt={x.alt}
-                id={x.id}
-              />
-            ))}
+          {projects.map((x) => (
+            <Project
+              key={x.id}
+              name={x.name}
+              src={x.src}
+              alt={x.alt}
+              id={x.id}
+            />
+          ))}
+          {isFavorites && (
+            <Project
+              alt="img-see-more-projects"
+              src="../images/all-projects.png"
+            />
+          )}
         </div>
       </section>
       <style jsx>{`
@@ -99,6 +102,7 @@ const Projects = () => {
           padding: 30px 0;
           justify-content: space-evenly;
           align-items: center;
+          gap: 10px;
         }
 
         .comming {
