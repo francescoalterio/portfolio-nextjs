@@ -34,6 +34,13 @@ const Skillsets = () => {
             size={120}
           />
           <Skill
+            src={"/images/technologies/typescript.png"}
+            href={"https://www.typescriptlang.org/"}
+            alt={"img-typescript-logo"}
+            technology="Typesript"
+            size={120}
+          />
+          <Skill
             src={"/images/technologies/react-logo.png"}
             href={"https://reactjs.org/"}
             alt={"img-react-logo"}
