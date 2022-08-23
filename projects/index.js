@@ -329,7 +329,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     src: "../images/projects/fran-studios.png",
     alt: "img-fran-studios",
     description:
-      "Fran Studios was born from the idea of​ ​creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
+      "Fran Studios was born from the idea of creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
     preview: "https://franstudios.vercel.app/",
     repo: "https://github.com/francescoalterio/fran-studios",
     isFavorite: true,

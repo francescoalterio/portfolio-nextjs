@@ -93,7 +93,13 @@ const Skillsets = () => {
             technology="React Navigation"
             size={120}
           />
-          ,
+          <Skill
+            src={"/images/technologies/express.png"}
+            href={"https://expressjs.com"}
+            alt={"img-express-logo"}
+            technology="Express"
+            size={120}
+          />
         </div>
       </section>
       <style jsx>{`
