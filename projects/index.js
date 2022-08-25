@@ -438,6 +438,7 @@ The app is based on a simple login/register with a home where you can create and
         alt={"img-sqlite-logo"}
         technology="SQLite"
         size={80}
+        needPadding
       />,
       <Skill
         src={"/images/technologies/prisma.webp"}
