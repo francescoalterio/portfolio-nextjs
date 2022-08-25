@@ -406,4 +406,46 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
       />,
     ],
   },
+  {
+    id: 4,
+    name: "Login APP",
+    src: "../images/projects/login-api.png",
+    alt: "img-loginapi",
+    description: `Login APP is my first backend project with Typescript, it is a study project where I learned to use a relational database such as SQLite and an ORM as prism, I also wanted to improve my knowledge in typescript.
+
+The app is based on a simple login/register with a home where you can create and delete posts, the curious thing about the app is that it has a session cookie so you don't have to log in every time you enter the app.`,
+    preview: "",
+    repo: "https://github.com/francescoalterio/login-api-express-typescript",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/express.png"}
+        href={"https://expressjs.com"}
+        alt={"img-express-logo"}
+        technology="Express"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/typescript.png"}
+        href={"https://www.typescriptlang.org/"}
+        alt={"img-typescript-logo"}
+        technology="Typesript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/sqlite.png"}
+        href={"https://www.sqlite.org/index.html"}
+        alt={"img-sqlite-logo"}
+        technology="SQLite"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/prisma.webp"}
+        href={"https://www.prisma.io/"}
+        alt={"img-prisma-logo"}
+        technology="Prisma"
+        size={80}
+      />,
+    ],
+  },
 ];
