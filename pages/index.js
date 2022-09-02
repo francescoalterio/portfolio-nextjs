@@ -1,3 +1,4 @@
+import { Container } from "@nextui-org/react";
 import Head from "next/head";
 import React from "react";
 import ContactWindow from "../components/ContactWindow";
@@ -44,23 +45,25 @@ export default function Home({ youtubeData }) {
         <title>Francesco Alterio | Portfolio</title>
       </Head>
 
-      <Nav />
+      <Container fluid>
+        <Nav />
 
-      <Presentation />
+        <Presentation />
 
-      <main>
-        <Scope />
+        <main>
+          <Scope />
 
-        <Projects projects={favoriteProjects} isFavorites />
+          <Projects projects={favoriteProjects} isFavorites />
 
-        <Skillsets />
+          <Skillsets />
 
-        <Youtube videos={youtubeData} />
+          <Youtube videos={youtubeData} />
 
-        <CoreTech />
-      </main>
+          <CoreTech />
+        </main>
 
-      <Footer />
+        <Footer />
+      </Container>
 
       <style global jsx>{`
         html {
@@ -77,5 +80,6 @@ export async function getServerSideProps() {
     "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDrf8_IRsNtBVNvnkMUvLRw0YEKn5s_pAg&channelId=UCgX7Wp7QOG0PSTuLh-MVN7Q&part=snippet,id&order=date&maxResults=3";
   const res = await fetch(url);
   const data = await res.json();
+  return { props: { youtubeData: null } };
   return { props: { youtubeData: data.items || null } };
 }

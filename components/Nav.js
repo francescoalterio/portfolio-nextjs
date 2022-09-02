@@ -4,109 +4,126 @@ import MobileNav from "../components/MobileNav";
 import ContactWindow from "./ContactWindow";
 import Image from "next/image";
 
-const Nav = () => {
-  const [contact, setContact] = useState(false);
-  const [mobileMenuDeploy, setMobileMenuDeploy] = useState(false);
+//next UI
+import {
+  Navbar,
+  Text,
+  Button,
+  Link as UILink,
+  useTheme,
+} from "@nextui-org/react";
+import { useNavBar } from "../hooks/useNavBar";
 
-  const handleClickMenu = () => {
-    mobileMenuDeploy ? setMobileMenuDeploy(false) : setMobileMenuDeploy(true);
-  };
+const Nav = () => {
+  const {
+    sectionActive,
+    mobileMenuDeploy,
+    handleClickMenu,
+    contact,
+    handleContact,
+  } = useNavBar();
+  const { theme } = useTheme();
 
   return (
     <>
-      {contact && <ContactWindow setContact={setContact} />}
-      <MobileNav mobileMenuDeploy={mobileMenuDeploy} />
-      <nav className="navegation">
-        <div className="box-logo">
-          <a href="#" className="a-logo ">
-            <Image
-              src="/images/yo-blanco.jpg"
-              style={{ borderRadius: "9999px" }}
-              height={36}
-              width={36}
-              alt="francesco-alterio-caricatura"
-            />
-          </a>
-        </div>
-        <div className="box-nombre">
-          <h1 className="nombre">Francesco Alterio</h1>
-        </div>
-        <div className="ampliador"></div>
-        <div className="box-links">
-          <Link href="#projects" scroll={false}>
-            <a className="a">Projects</a>
-          </Link>
-          <Link href="#skillset">
-            <a className="a">Skillset</a>
-          </Link>
-          <Link href="#videos">
-            <a className="a">Videos</a>
-          </Link>
-          <Link href="#coretech">
-            <a className="a">Core Technology</a>
-          </Link>
-        </div>
-        <button className="btn-contacto" onClick={() => setContact(true)}>
-          Contact
-        </button>
-        <button className="mobile-menu" onClick={handleClickMenu}>
-          <svg
-            className="menu-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="45"
-            height="45"
-            viewBox="0 0 172 172"
-            style={{ fill: "#000000" }}
+      {contact && <ContactWindow handleContact={handleContact} />}
+      <Navbar isBordered variant="sticky">
+        <Navbar.Brand>
+          <Navbar.Toggle
+            isSelected={mobileMenuDeploy}
+            showIn="sm"
+            aria-label="toggle navigation"
+            onChange={handleClickMenu}
+          />
+          <div className="box-logo">
+            <a href="#" className="a-logo ">
+              <Image
+                src="/images/yo-blanco.jpg"
+                style={{ borderRadius: "9999px" }}
+                height={36}
+                width={36}
+                alt="francesco-alterio-caricatura"
+              />
+            </a>
+          </div>
+
+          <Text
+            as="h1"
+            css={{ fontSize: 25, fontWeight: 600, margin: 0, marginLeft: 15 }}
+            hideIn="sm"
           >
-            <g
-              fill="none"
-              fillRule="nonzero"
-              stroke="none"
-              strokeWidth="1"
-              strokeLinecap="butt"
-              strokeLinejoin="miter"
-              strokeMiterlimit="10"
-              strokeDasharray=""
-              strokeDashoffset="0"
-              fontFamily="none"
-              fontWeight="none"
-              fontSize="none"
-              textAnchor="none"
-              style={{ mixBlendMode: "normal" }}
-            >
-              <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g id="original-icon" fill="#6e52f5">
-                <path d="M21.5,37.625v10.75h129v-10.75zM21.5,80.625v10.75h129v-10.75zM21.5,123.625v10.75h129v-10.75z"></path>
-              </g>
-            </g>
-          </svg>
-        </button>
-      </nav>
+            Francesco Alterio
+          </Text>
+        </Navbar.Brand>
+        <Navbar.Content>
+          <Navbar.Content
+            variant="highlight"
+            activeColor="secondary"
+            hideIn="sm"
+          >
+            <Link href="#projects">
+              <Navbar.Link isActive={sectionActive === "#projects"}>
+                Projects
+              </Navbar.Link>
+            </Link>
+            <Link href="#skillset">
+              <Navbar.Link isActive={sectionActive === "#skillset"}>
+                Skillset
+              </Navbar.Link>
+            </Link>
+            <Link href="#videos">
+              <Navbar.Link isActive={sectionActive === "#videos"}>
+                Videos
+              </Navbar.Link>
+            </Link>
+            <Link href="#coretech">
+              <Navbar.Link isActive={sectionActive === "#coretech"}>
+                Core Technology
+              </Navbar.Link>
+            </Link>
+          </Navbar.Content>
+          <Button auto color="secondary" rounded onClick={handleContact}>
+            Contact
+          </Button>
+        </Navbar.Content>
+        <Navbar.Collapse hidden={!mobileMenuDeploy}>
+          <Navbar.CollapseItem>
+            <Link href="#projects">
+              <UILink onClick={handleClickMenu} color="text">
+                Projects
+              </UILink>
+            </Link>
+          </Navbar.CollapseItem>
+          <Navbar.CollapseItem>
+            <Link href="#skillset">
+              <UILink onClick={handleClickMenu} color="text">
+                Skillset
+              </UILink>
+            </Link>
+          </Navbar.CollapseItem>
+          <Navbar.CollapseItem>
+            <Link href="#videos">
+              <UILink onClick={handleClickMenu} color="text">
+                Videos
+              </UILink>
+            </Link>
+          </Navbar.CollapseItem>
+          <Navbar.CollapseItem>
+            <Link href="#coretech">
+              <UILink onClick={handleClickMenu} color="text">
+                Core Technology
+              </UILink>
+            </Link>
+          </Navbar.CollapseItem>
+        </Navbar.Collapse>
+      </Navbar>
       <style jsx>{`
-        .navegation {
-          background-color: rgb(240, 240, 240);
-          width: 100%;
-          height: 70px;
-          position: sticky;
-          top: 0;
-          display: flex;
-          /* box-shadow: 0 3px 10px #181818; */
-          z-index: 20;
-          align-items: center;
-        }
-
-        .ampliador {
-          flex: 1 1 auto;
-        }
-
         .box-logo {
           display: flex;
           align-items: center;
           justify-content: center;
           margin-left: 20px;
-          background-color: #6e52f5;
+          background-color: ${theme.colors.secondary.value};
           width: 50px;
           height: 50px;
           border-radius: 50px;
@@ -116,122 +133,6 @@ const Nav = () => {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        .yo-logo {
-          width: 36px;
-          height: 36px;
-          border-radius: 100px;
-        }
-
-        .a {
-          text-decoration: none;
-          color: rgb(34, 34, 34);
-          padding: 25px;
-          height: 100%;
-          font-weight: 600;
-          transition: 0.4s;
-          font-size: 17px;
-        }
-
-        .btn-contacto {
-          margin: auto;
-          justify-content: center;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          color: rgb(238, 238, 238);
-          width: 140px;
-          height: 45px;
-          border-radius: 50px;
-          font-weight: 700;
-          transition: 0.2s;
-          background-color: #6e52f5;
-          margin-right: 20px;
-          flex: 0 0 auto;
-          cursor: pointer;
-          border: none;
-          font-size: 17px;
-        }
-
-        .mobile-menu {
-          margin-right: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          border: none;
-          background: none;
-          display: none;
-          outline: none;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-          transition: 0.5s;
-        }
-
-        .mobile-menu:active {
-          transform: scale(1.1);
-        }
-
-        .a:nth-child(6) {
-          margin-right: 20px;
-        }
-
-        .a:hover {
-          color: #6e52f5;
-        }
-
-        .btn-contacto:hover {
-          background-color: #5432ff;
-        }
-
-        .box-nombre {
-          margin-left: 10px;
-        }
-
-        .nombre {
-          color: #000000;
-        }
-
-        @media (max-width: 1024px) {
-          .box-links {
-            display: none;
-          }
-
-          .btn-contacto {
-            display: none;
-          }
-
-          .mobile-menu {
-            display: block;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .box-logo {
-            margin-left: 20px;
-          }
-
-          .mobile-menu {
-            margin-right: 20px;
-          }
-
-          .nombre {
-            font-size: 18px;
-          }
-        }
-
-        @media (max-width: 320px) {
-          .box-logo {
-            margin-left: 10px;
-          }
-
-          .mobile-menu {
-            margin-right: 10px;
-          }
-
-          .nombre {
-            font-size: 16px;
-          }
         }
       `}</style>
     </>

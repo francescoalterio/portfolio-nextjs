@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactWindow = ({ setContact }) => {
+const ContactWindow = ({ handleContact }) => {
   return (
     <>
       <div className="pantalla-contacto">
@@ -10,7 +10,7 @@ const ContactWindow = ({ setContact }) => {
               <h3 className="title-contacto">Contact</h3>
             </div>
             <div className="box-x">
-              <button className="btn-x" onClick={() => setContact(false)}>
+              <button className="btn-x" onClick={handleContact}>
                 <img className="x" src="../images/letra-x.svg" alt="" />
               </button>
             </div>
