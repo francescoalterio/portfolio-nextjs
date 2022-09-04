@@ -120,7 +120,7 @@ export const projectsDB = [
     description: `Program that allows you to send files of any type between a PC and a mobile. You only need to start the server on the machine which has the core of the entire ecosystem, the app being the client with which to interact.`,
     preview: "",
     repo: "https://github.com/francescoalterio/dualsend-mobileapp",
-    isFavorite: true,
+    isFavorite: false,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -445,6 +445,41 @@ The app is based on a simple login/register with a home where you can create and
         href={"https://www.prisma.io/"}
         alt={"img-prisma-logo"}
         technology="Prisma"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 11,
+    name: "Fran Editor",
+    src: "../images/projects/franeditor.png",
+    alt: "img-franeditor",
+    description: `Fran Editor is a Javascript code editor on a web. The code is executed every time a change is made without the need to save and each console.log is reflected in a console on the right side of the editor.
+
+The app is built with Monaco Editor, the same editor that VS Code uses.`,
+    preview: "https://franeditor.vercel.app/",
+    repo: "https://github.com/francescoalterio/fran-editor",
+    isFavorite: true,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
         size={80}
       />,
     ],

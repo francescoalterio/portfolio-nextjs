@@ -35,6 +35,7 @@ const Projects = ({ projects, isFavorites }) => {
           display: flex;
           flex-flow: column nowrap;
           scroll-behavior: smooth;
+          padding: 0 10px;
         }
 
         .box-title {
