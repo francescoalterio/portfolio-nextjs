@@ -4,12 +4,14 @@ export const projectsDB = [
   {
     id: 1,
     name: "Smite Filter",
-    src: "../images/projects/smitefilter.png",
+    src: "/images/projects/smitefilter.png",
     alt: "img-o",
     description:
       "Filter of gods for the video game Smite using Javscript vanilla",
     preview: "https://francescoalterio.github.io/smitefilter/",
     repo: "https://github.com/francescoalterio/smitefilter",
+    language: "javascript",
+    framework: "html",
     isFavorite: false,
     techs: [
       <Skill
@@ -38,13 +40,15 @@ export const projectsDB = [
   {
     id: 2,
     name: "Francesco Pomodoro",
-    src: "../images/projects/francescopomodoro.png",
+    src: "/images/projects/francescopomodoro.png",
     alt: "img-francescopomodoro",
     description:
       "Clock pomodoro to increase the productivity of your study using React",
     preview: "https://francescopomodoro.netlify.app/",
     repo: "https://github.com/francescoalterio/pomodoro-timer",
-    isFavorite: true,
+    language: "javascript",
+    framework: "react",
+    isFavorite: false,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -72,11 +76,13 @@ export const projectsDB = [
   {
     id: 3,
     name: "Study Panel",
-    src: "../images/projects/studypanel.png",
+    src: "/images/projects/studypanel.png",
     alt: "img-studypanel",
     description: `Study panel for Web programming. It has a user system using Firebase and stores each of the technologies that you are learning and those learned.`,
     preview: "https://studypanel.vercel.app/",
     repo: "https://github.com/francescoalterio/react-study-panel",
+    language: "javascript",
+    framework: "react",
     isFavorite: true,
     techs: [
       <Skill
@@ -115,11 +121,13 @@ export const projectsDB = [
   {
     id: 4,
     name: "Dualsend",
-    src: "../images/projects/dualsend.png",
+    src: "/images/projects/dualsend.png",
     alt: "img-dualsend",
     description: `Program that allows you to send files of any type between a PC and a mobile. You only need to start the server on the machine which has the core of the entire ecosystem, the app being the client with which to interact.`,
     preview: "",
     repo: "https://github.com/francescoalterio/dualsend-mobileapp",
+    language: "javascript",
+    framework: "express",
     isFavorite: false,
     techs: [
       <Skill
@@ -163,7 +171,7 @@ export const projectsDB = [
   {
     id: 5,
     name: "Project Manager",
-    src: "../images/projects/project-manager.png",
+    src: "/images/projects/project-manager.png",
     alt: "img-project-manager",
     description: `Manage and manage your projects and tasks in an easy and fast way.
 
@@ -178,6 +186,8 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
 7. Completion of projects and tasks.`,
     app: "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager",
     repo: "https://github.com/francescoalterio/project-manager",
+    language: "javascript",
+    framework: "reactnative",
     isFavorite: true,
     techs: [
       <Skill
@@ -221,7 +231,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   {
     id: 6,
     name: "PokeBook",
-    src: "../images/projects/pokebook.png",
+    src: "/images/projects/pokebook.png",
     alt: "img-pokebook",
     description: `The application has information on each existing Pokemon in all the games of the main saga.
 
@@ -242,6 +252,8 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   Filter pokemons by their types to learn more in depth.`,
     app: "https://play.google.com/store/apps/details?id=com.franstudios.pokebook",
     repo: "https://github.com/francescoalterio/pokebook",
+    language: "javascript",
+    framework: "reactnative",
     isFavorite: true,
     techs: [
       <Skill
@@ -285,12 +297,14 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   {
     id: 7,
     name: "IP Finder",
-    src: "../images/projects/ipfinder.png",
+    src: "/images/projects/ipfinder.png",
     alt: "img-o",
     description:
       "IP Finder app allows you to locate the IP location of any IP address.IP Finder allows you to locate and search any IP anywhere in the world for free. The app provides you with a lot of information about the located IP such as location, time zone, etc.",
     app: "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder",
     repo: "https://github.com/francescoalterio/ip-finder",
+    language: "javascript",
+    framework: "reactnative",
     isFavorite: false,
     techs: [
       <Skill
@@ -326,12 +340,14 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   {
     id: 8,
     name: "Fran Studios",
-    src: "../images/projects/fran-studios.png",
+    src: "/images/projects/fran-studios.png",
     alt: "img-fran-studios",
     description:
       "Fran Studios was born from the idea of creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
     preview: "https://franstudios.vercel.app/",
     repo: "https://github.com/francescoalterio/fran-studios",
+    language: "javascript",
+    framework: "nextjs",
     isFavorite: true,
     techs: [
       <Skill
@@ -360,12 +376,14 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   {
     id: 9,
     name: "Cocktails Library",
-    src: "../images/projects/cocktails-library.png",
+    src: "/images/projects/cocktails-library.png",
     alt: "img-o",
     description:
       "Cocktail Recipe App is a mobile application that helps you find cocktail recipes and drink recipes.",
     app: "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary",
     repo: "https://github.com/francescoalterio/cocktails-app",
+    language: "javascript",
+    framework: "reactnative",
     isFavorite: true,
     techs: [
       <Skill
@@ -409,13 +427,15 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   {
     id: 10,
     name: "Login APP",
-    src: "../images/projects/login-api.png",
+    src: "/images/projects/login-api.png",
     alt: "img-loginapi",
     description: `Login APP is my first backend project with Typescript, it is a study project where I learned to use a relational database such as SQLite and an ORM as prism, I also wanted to improve my knowledge in typescript.
 
 The app is based on a simple login/register with a home where you can create and delete posts, the curious thing about the app is that it has a session cookie so you don't have to log in every time you enter the app.`,
     preview: "",
     repo: "https://github.com/francescoalterio/login-api-express-typescript",
+    language: "typescript",
+    framework: "express",
     isFavorite: false,
     techs: [
       <Skill
@@ -452,13 +472,15 @@ The app is based on a simple login/register with a home where you can create and
   {
     id: 11,
     name: "Fran Editor",
-    src: "../images/projects/franeditor.png",
+    src: "/images/projects/franeditor.png",
     alt: "img-franeditor",
     description: `Fran Editor is a Javascript code editor on a web. The code is executed every time a change is made without the need to save and each console.log is reflected in a console on the right side of the editor.
 
 The app is built with Monaco Editor, the same editor that VS Code uses.`,
     preview: "https://franeditor.vercel.app/",
     repo: "https://github.com/francescoalterio/fran-editor",
+    language: "javascript",
+    framework: "react",
     isFavorite: true,
     techs: [
       <Skill

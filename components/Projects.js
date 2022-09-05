@@ -1,8 +1,10 @@
 import React from "react";
 import Project from "./Project";
-import { projectsDB } from "../projects";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Projects = ({ projects, isFavorites }) => {
+  const router = useRouter();
   return (
     <>
       <section className="portafolio" id="projects">
@@ -15,17 +17,23 @@ const Projects = ({ projects, isFavorites }) => {
             <Project
               key={x.id}
               name={x.name}
+              language={x.language}
+              framework={x.framework}
               src={x.src}
               alt={x.alt}
               id={x.id}
             />
           ))}
-          {isFavorites && (
-            <Project
-              alt="img-see-more-projects"
-              src="../images/all-projects.png"
-            />
-          )}
+        </div>
+        <div className="all-projects-container">
+          <Link
+            href={{
+              pathname: "/projects",
+              query: { lastPage: router.pathname },
+            }}
+          >
+            <a className="all-projects-link">See all my projects</a>
+          </Link>
         </div>
       </section>
       <style jsx>{`
@@ -100,17 +108,42 @@ const Projects = ({ projects, isFavorites }) => {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
-          padding: 30px 0;
+          padding: 30px 30px;
           justify-content: space-evenly;
           align-items: center;
+          gap: 30px 30px;
+        }
+
+        .all-projects-container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 40px 40px;
           gap: 10px;
         }
 
-        .comming {
-          display: inline-block;
-          color: rgb(128, 128, 128);
-          font-size: 2vw;
-          font-weight: 700;
+        .all-projects-link {
+          background-color: #b0b0b0;
+          text-decoration: none;
+          color: #292929;
+          width: 600px;
+          text-align: center;
+          padding: 13px 18px;
+          border-radius: 10px;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.3s;
+        }
+
+        .all-projects-link:hover {
+          transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+          .all-projects-link {
+            width: 100%;
+          }
         }
       `}</style>
     </>
