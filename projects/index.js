@@ -39,6 +39,146 @@ export const projectsDB = [
   },
   {
     id: 2,
+    name: "React Calculator",
+    src: "/images/projects/react-calculator.png",
+    alt: "img-react-calculator",
+    description: "Calculator developed with React.",
+    preview: "https://react-calculator-fran.netlify.app",
+    repo: "https://github.com/francescoalterio/react-calculator",
+    language: "javascript",
+    framework: "react",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/tailwind-logo.png"}
+        href={"https://tailwindcss.com/"}
+        alt={"img-tailwind-logo"}
+        technology="Tailwindcss"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 3,
+    name: "React Cryptocurrency List",
+    src: "/images/projects/crypto-list.png",
+    alt: "img-crypto-list",
+    description: "List of the most famous cryptocurrencies and their prices.",
+    preview: "https://stackblitz.com/edit/cryptocurrencylist?file=src%2FApp.js",
+    repo: "https://github.com/francescoalterio/react-cryptocurrencylist",
+    language: "javascript",
+    framework: "react",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 4,
+    name: "Money Converter",
+    src: "/images/projects/money-converter.png",
+    alt: "img-money-converter",
+    description: "Converter from one currency to another.",
+    preview: "https://stackblitz.com/edit/react-e9kmsj?file=README.md",
+    repo: "https://github.com/francescoalterio/money-converter",
+    language: "javascript",
+    framework: "react",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 5,
+    name: "Quizz App",
+    src: "/images/projects/quizz-app.png",
+    alt: "img-quizz-app",
+    description: "App of questions of various categories.",
+    preview: "https://stackblitz.com/edit/react-scdye8?file=README.md",
+    repo: "https://github.com/francescoalterio/quiz-app",
+    language: "javascript",
+    framework: "react",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 6,
     name: "Francesco Pomodoro",
     src: "/images/projects/francescopomodoro.png",
     alt: "img-francescopomodoro",
@@ -74,7 +214,42 @@ export const projectsDB = [
     ],
   },
   {
-    id: 3,
+    id: 7,
+    name: "API Joke",
+    src: "/images/projects/api-joke.png",
+    alt: "img-api-joke",
+    description: "Consuming joke API with react.",
+    preview: "https://stackblitz.com/edit/react-e6wwrx?file=README.md",
+    repo: "https://github.com/francescoalterio/react-API-Joke",
+    language: "javascript",
+    framework: "react",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/css.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        alt={"img-css3-logo"}
+        technology="CSS"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 8,
     name: "Study Panel",
     src: "/images/projects/studypanel.png",
     alt: "img-studypanel",
@@ -119,7 +294,7 @@ export const projectsDB = [
     ],
   },
   {
-    id: 4,
+    id: 9,
     name: "Dualsend",
     src: "/images/projects/dualsend.png",
     alt: "img-dualsend",
@@ -169,7 +344,7 @@ export const projectsDB = [
     ],
   },
   {
-    id: 5,
+    id: 10,
     name: "Project Manager",
     src: "/images/projects/project-manager.png",
     alt: "img-project-manager",
@@ -229,7 +404,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     ],
   },
   {
-    id: 6,
+    id: 11,
     name: "PokeBook",
     src: "/images/projects/pokebook.png",
     alt: "img-pokebook",
@@ -295,7 +470,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     ],
   },
   {
-    id: 7,
+    id: 12,
     name: "IP Finder",
     src: "/images/projects/ipfinder.png",
     alt: "img-o",
@@ -338,7 +513,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     ],
   },
   {
-    id: 8,
+    id: 13,
     name: "Fran Studios",
     src: "/images/projects/fran-studios.png",
     alt: "img-fran-studios",
@@ -374,7 +549,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     ],
   },
   {
-    id: 9,
+    id: 14,
     name: "Cocktails Library",
     src: "/images/projects/cocktails-library.png",
     alt: "img-o",
@@ -425,7 +600,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     ],
   },
   {
-    id: 10,
+    id: 15,
     name: "Login APP",
     src: "/images/projects/login-api.png",
     alt: "img-loginapi",
@@ -470,7 +645,7 @@ The app is based on a simple login/register with a home where you can create and
     ],
   },
   {
-    id: 11,
+    id: 16,
     name: "Fran Editor",
     src: "/images/projects/franeditor.png",
     alt: "img-franeditor",
@@ -503,6 +678,28 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         alt={"img-css3-logo"}
         technology="CSS"
         size={80}
+      />,
+    ],
+  },
+  {
+    id: 17,
+    name: "Fran Calculator PY",
+    src: "/images/projects/fran-calculator.png",
+    alt: "img-fran-calculator",
+    description: "Calculator developed with Python and Tkinter.",
+    preview: "",
+    repo: "https://github.com/francescoalterio/fran-calculator-python",
+    language: "python",
+    framework: "",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/python.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"}
+        alt={"img-python-logo"}
+        technology="Python"
+        size={80}
+        needPadding
       />,
     ],
   },

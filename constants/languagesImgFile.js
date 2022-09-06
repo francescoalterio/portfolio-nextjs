@@ -6,4 +6,5 @@ export const languagesImgFile = {
   express: "express.png",
   html: "html.svg",
   nextjs: "next.png",
+  python: "python.png",
 };

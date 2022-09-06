@@ -26,7 +26,7 @@ function projects() {
                 </a>
               </Link>
             </nav>
-            <Projects projects={projectsReversed} />
+            <Projects projects={projectsReversed} isAll />
           </div>
         </main>
       </div>

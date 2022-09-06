@@ -3,7 +3,7 @@ import Project from "./Project";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const Projects = ({ projects, isFavorites }) => {
+const Projects = ({ projects, isAll }) => {
   const router = useRouter();
   return (
     <>
@@ -25,16 +25,18 @@ const Projects = ({ projects, isFavorites }) => {
             />
           ))}
         </div>
-        <div className="all-projects-container">
-          <Link
-            href={{
-              pathname: "/projects",
-              query: { lastPage: router.pathname },
-            }}
-          >
-            <a className="all-projects-link">See all my projects</a>
-          </Link>
-        </div>
+        {!isAll && (
+          <div className="all-projects-container">
+            <Link
+              href={{
+                pathname: "/projects",
+                query: { lastPage: router.pathname },
+              }}
+            >
+              <a className="all-projects-link">See all my projects</a>
+            </Link>
+          </div>
+        )}
       </section>
       <style jsx>{`
         .portafolio {

@@ -38,22 +38,24 @@ const Project = ({ name, language, framework, src, alt, id }) => {
               height={50}
             />
           </div>
-          <div
-            style={{
-              borderRadius: "7px",
-              overflow: "hidden",
-              width: 50,
-              height: 50,
-              backgroundColor: "#383838",
-            }}
-          >
-            <Image
-              src={`/images/technologies/${languagesImgFile[framework]}`}
-              width={50}
-              height={50}
-              alt={`logo-${framework}`}
-            />
-          </div>
+          {framework && (
+            <div
+              style={{
+                borderRadius: "7px",
+                overflow: "hidden",
+                width: 50,
+                height: 50,
+                backgroundColor: "#383838",
+              }}
+            >
+              <Image
+                src={`/images/technologies/${languagesImgFile[framework]}`}
+                width={50}
+                height={50}
+                alt={`logo-${framework}`}
+              />
+            </div>
+          )}
         </div>
         <Link
           href={{
