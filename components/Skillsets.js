@@ -107,6 +107,15 @@ const Skillsets = () => {
             technology="Express"
             size={120}
           />
+          <Skill
+            src={"/images/technologies/python.png"}
+            href={"https://www.python.org/"}
+            alt={"img-python-logo"}
+            technology="Python"
+            size={120}
+            needPadding
+          />
+          ,
         </div>
       </section>
       <style jsx>{`

@@ -695,7 +695,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     techs: [
       <Skill
         src={"/images/technologies/python.png"}
-        href={"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"}
+        href={"https://www.python.org/"}
         alt={"img-python-logo"}
         technology="Python"
         size={80}
