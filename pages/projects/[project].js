@@ -40,97 +40,99 @@ export default function project() {
         <title>Francesco Alterio | Project | {projectData?.name}</title>
       </Head>
 
-      <main>
-        <div>
-          {projectData && (
-            <div className="background">
-              <nav className="navegation">
-                <Link
-                  href={router.query.lastPage ? router.query.lastPage : "/"}
-                >
-                  <a className="a-logo ">
+      <main className="vw">
+        {projectData && (
+          <div className="background">
+            <nav className="navegation">
+              <Link href={router.query.lastPage ? router.query.lastPage : "/"}>
+                <a className="a-logo ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    fill="#6e52f5"
+                    class="bi bi-arrow-left-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                  </svg>
+                </a>
+              </Link>
+            </nav>
+
+            <h1 className="project-name">{projectData.name}</h1>
+            <div className="data-container">
+              <div className="img-container">
+                <img className="img" src={projectData.src} />
+              </div>
+              <div className="data">
+                <h3 className="data-subtitle">Used technologies</h3>
+                <div className="box-technologies">
+                  {projectData.techs.map((x) => x)}
+                </div>
+                <p style={{ fontSize: 15 }}>{projectData.description}</p>
+                <div className="btn-container">
+                  <a
+                    className="btn repo-btn"
+                    href={projectData.repo}
+                    target="__blank"
+                  >
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="40"
-                      fill="#6e52f5"
-                      class="bi bi-arrow-left-circle-fill"
+                      class="w-6 h-6 mr-2"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
                       viewBox="0 0 16 16"
                     >
-                      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
                     </svg>
+                    <span style={{ paddingLeft: 10 }}>Repository</span>
                   </a>
-                </Link>
-              </nav>
-
-              <h1 className="project-name">{projectData.name}</h1>
-              <div className="data-container">
-                <div className="img-container">
-                  <img className="img" src={projectData.src} />
-                </div>
-                <div className="data">
-                  <h3 className="data-subtitle">Used technologies</h3>
-                  <div className="box-technologies">
-                    {projectData.techs.map((x) => x)}
-                  </div>
-                  <p style={{ fontSize: 15 }}>{projectData.description}</p>
-                  <div className="btn-container">
+                  {projectData.app ? (
                     <a
-                      className="btn repo-btn"
-                      href={projectData.repo}
-                      target="__blank"
+                      href={projectData.app}
+                      target="__black"
+                      className="a-googleplay"
                     >
-                      <svg
-                        class="w-6 h-6 mr-2"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                      </svg>
-                      <span style={{ paddingLeft: 10 }}>Repository</span>
+                      <img
+                        className="img-googleplay"
+                        src="./../../images/google-play-button.png"
+                      />
                     </a>
-                    {projectData.app ? (
+                  ) : (
+                    projectData.preview && (
                       <a
-                        href={projectData.app}
-                        target="__black"
-                        className="a-googleplay"
+                        className="btn web-btn"
+                        href={projectData.preview}
+                        target="__blank"
                       >
-                        <img
-                          className="img-googleplay"
-                          src="./../../images/google-play-button.png"
-                        />
-                      </a>
-                    ) : (
-                      projectData.preview && (
-                        <a
-                          className="btn web-btn"
-                          href={projectData.preview}
-                          target="__blank"
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-code-slash"
+                          viewBox="0 0 16 16"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="25"
-                            height="25"
-                            fill="currentColor"
-                            class="bi bi-code-slash"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-                          </svg>
-                          <span style={{ paddingLeft: 10 }}>Website</span>
-                        </a>
-                      )
-                    )}
-                  </div>
+                          <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                        </svg>
+                        <span style={{ paddingLeft: 10 }}>Website</span>
+                      </a>
+                    )
+                  )}
                 </div>
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </main>
+
       <style jsx>{`
+        .vw {
+          width: 100%;
+          height: 100vh;
+          background-color: rgb(240, 240, 240);
+        }
         .navegation {
           background-color: rgb(240, 240, 240);
           width: 100%;

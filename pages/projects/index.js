@@ -7,8 +7,8 @@ function projects() {
   const projectsReversed = [...projectsDB].reverse();
   return (
     <>
-      <div className="vw">
-        <main>
+      <div>
+        <main className="vw">
           <div className="background">
             <nav className="navegation">
               <Link href="/">
@@ -33,7 +33,7 @@ function projects() {
       <style jsx>{`
         .vw {
           width: 100%;
-          height: 100vh;
+          height: 100%;
           background-color: rgb(240, 240, 240);
         }
         .navegation {
@@ -46,6 +46,7 @@ function projects() {
           /* box-shadow: 0 3px 10px #181818; */
           z-index: 20;
           align-items: center;
+          padding: 0 70px;
         }
 
         .a-logo {
@@ -61,51 +62,25 @@ function projects() {
 
         .background {
           width: 100%;
-          padding: 15px 100px 20px 100px;
+          padding: 15px 10px 20px 10px;
           height: 100%;
           background-color: rgb(240, 240, 240);
           display: flex;
           flex-direction: column;
         }
 
-        @media (max-width: 1200px) {
-          .background {
-            padding: 15px 100px 20px 100px;
-          }
-        }
-
-        @media (max-width: 1100px) {
-          .background {
-            padding: 15px 100px 20px 100px;
-          }
-        }
-
-        @media (max-width: 992px) {
-          .background {
-            padding: 15px 100px 20px 100px;
-          }
-        }
-
-        @media (max-width: 892px) {
-          .background {
-            padding: 15px 100px 20px 100px;
-          }
-        }
-
-        @media (max-width: 700px) {
-          .background {
-            padding: 15px 50px 20px 50px;
-          }
-        }
-
         @media (max-width: 600px) {
+          .navegation {
+            padding: 0 20px;
+          }
+
           .background {
-            padding: 15px 20px 20px 20px;
+            padding: 15px 0px 20px 0px;
           }
         }
         @media (max-width: 360px) {
           .background {
-            padding: 15px 10px 20px 10px;
+            padding: 15px 0px 20px 0px;
           }
         }
       `}</style>
