@@ -130,8 +130,10 @@ export default function project() {
       <style jsx>{`
         .vw {
           width: 100%;
-          height: 100vh;
+          min-height: 100vh;
+
           background-color: rgb(240, 240, 240);
+          padding-bottom: 40px;
         }
         .navegation {
           background-color: rgb(240, 240, 240);
