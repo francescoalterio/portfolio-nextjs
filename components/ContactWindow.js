@@ -36,7 +36,7 @@ const ContactWindow = ({ setContact }) => {
           <div className="email-container">
             <h5>Email: </h5>
             <div className="email-box">
-              <input type="text" readOnly value="francescoalterio@gmail.com" />
+              <input type="text" readOnly value="francescoalteriog@gmail.com" />
               {isEmailCopy ? (
                 <button
                   onClick={copyEmail}
