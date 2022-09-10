@@ -1,65 +1,90 @@
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
+import {
+  IoLogoLinkedin,
+  IoLogoGithub,
+  IoClipboardOutline,
+  IoCloseCircleSharp,
+  IoCheckmarkCircleSharp,
+} from "react-icons/io5";
 
 const ContactWindow = ({ setContact }) => {
+  const [isEmailCopy, setIsEmailCopy] = useState(false);
+  const copyEmail = () => {
+    if (!navigator.clipboard) {
+      alert("Clipboard API not available");
+      return;
+    } else {
+      navigator.clipboard.writeText("francescoalteriog@gmail.com").then(() => {
+        setIsEmailCopy(true);
+      });
+    }
+  };
+
   return (
     <>
-      <div className="pantalla-contacto">
-        <div className="box-pantalla-contacto">
-          <div className="box-title-x__contacto">
-            <div className="box-title-contacto">
-              <h3 className="title-contacto">Contact</h3>
-            </div>
-            <div className="box-x">
-              <button className="btn-x" onClick={() => setContact(false)}>
-                <img className="x" src="../images/letra-x.svg" alt="" />
-              </button>
+      <div className="background">
+        <div className="contact-window">
+          <button
+            className="btn-close-window"
+            onClick={() => setContact(false)}
+          >
+            <IoCloseCircleSharp size={40} color="rgb(34, 34, 34)" />
+          </button>
+          <h2 className="title">CONTACT</h2>
+          <hr className="separator" />
+          <div className="email-container">
+            <h5>Email: </h5>
+            <div className="email-box">
+              <input type="text" readOnly value="francescoalterio@gmail.com" />
+              {isEmailCopy ? (
+                <button
+                  onClick={copyEmail}
+                  className="btn-copy-email"
+                  style={{ backgroundColor: "#198754" }}
+                >
+                  <IoCheckmarkCircleSharp size={20} color="rgb(240,240,240)" />
+                </button>
+              ) : (
+                <button onClick={copyEmail} className="btn-copy-email">
+                  <IoClipboardOutline size={20} color="rgb(240,240,240)" />
+                </button>
+              )}
             </div>
           </div>
-          <hr className="separator" />
-          <form
-            className="box-formulario"
-            action="https://formsubmit.co/francescoalteriog@gmail.com"
-            method="POST"
-          >
-            <div className="box">
-              <input
-                type="text"
-                required
-                name="name"
-                id=""
-                className="input"
-                placeholder="Name"
-              />
+          <div className="social-container">
+            <h5>Social networks:</h5>
+            <div className="social-box">
+              <a
+                href="https://www.linkedin.com/in/francescoalterio/"
+                target="__blank"
+                className="a-social"
+              >
+                <IoLogoLinkedin size={40} color="rgb(34, 34, 34)" />
+              </a>
+              <a
+                href="https://github.com/francescoalterio"
+                target="__blank"
+                className="a-social"
+              >
+                <IoLogoGithub size={40} color="rgb(34, 34, 34)" />
+              </a>
             </div>
-            <div className="box">
-              <input
-                type="email"
-                required
-                name="email"
-                id="input2"
-                className="input"
-                placeholder="Email"
-              />
+          </div>
+          <div className="social-container">
+            <h5>CV:</h5>
+            <div className="social-box">
+              <Link href="/cv.pdf">
+                <a className="a-cv" target="__blank">
+                  Go to CV
+                </a>
+              </Link>
             </div>
-            <div className="box-comentario">
-              <textarea
-                className="comentario"
-                required
-                name="comentary"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Comentary"
-              ></textarea>
-            </div>
-            <div className="box-submit">
-              <input type="submit" value="Submit" className="btn-submit" />
-            </div>
-          </form>
+          </div>
         </div>
       </div>
       <style jsx>{`
-        .pantalla-contacto {
+        .background {
           width: 100vw;
           height: 100vh;
           background-color: rgba(0, 0, 0, 0.315);
@@ -69,158 +94,111 @@ const ContactWindow = ({ setContact }) => {
           position: fixed;
           top: 0;
           z-index: 100;
-
           transition: 1s;
         }
 
-        .aparecer-des-contacto {
-          display: flex;
-          visibility: visible;
-        }
-
-        .box-pantalla-contacto {
-          width: 40vw;
-          height: 80vh;
-          background-color: #f0f0f0;
-          border-radius: 20px;
-          padding-top: 20px;
-        }
-
-        .box-title-x__contacto {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .box-title-contacto {
-          margin-left: 60px;
-          display: flex;
-          justify-content: center;
-          width: 100%;
-        }
-
-        .title-contacto {
-          font-size: 30px;
-          font-weight: 800;
-          color: rgb(31, 31, 31);
-        }
-
-        .box-x {
-          width: 30px;
-          height: 30px;
-          margin-right: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .btn-x {
-          width: 20px;
-          height: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: none;
-          border: none;
-          cursor: pointer;
-          outline: none;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-
-        .x {
-          width: 20px;
-          height: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .box-formulario {
-          width: 100%;
-          height: 65vh;
-          display: flex;
-          flex-flow: column;
-          justify-content: space-evenly;
-          align-items: center;
-        }
-
-        .box {
-          background-color: #f0f0f0;
-          border-radius: 100px;
-          width: 60%;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          padding-left: 20px;
-          border: 2px solid #6e52f5;
-        }
-
-        .box-comentario {
-          width: 59%;
-          border: 2px solid #6e52f5;
+        .contact-window {
+          width: 400px;
+          height: 350px;
+          background-color: rgb(240, 240, 240);
           border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem 4rem;
+          position: relative;
         }
 
-        textarea {
-          resize: none;
-          color: #494949;
-          border: none;
-          background: none;
-          text-decoration: none;
-          outline: none;
-          width: 100%;
-          padding: 5px 10px;
-        }
-
-        .input {
+        .btn-close-window {
+          position: absolute;
+          right: 20px;
+          top: 20px;
           background: none;
           border: none;
-          text-decoration: none;
-          outline: none;
-          color: #494949;
-          width: 95%;
-        }
-
-        .btn-submit {
-          background: #6e52f5;
-          border: 1px solid #5432ff;
-          width: 120px;
-          height: 40px;
-          color: #f0f0f0;
-          font-weight: 600;
-          border-radius: 5px;
           cursor: pointer;
-          transition: 0.3s;
         }
 
-        .btn-submit:hover {
-          background: #5432ff;
+        .title {
+          font-weight: 700;
+          font-size: 30px;
+          color: rgb(34, 34, 34);
         }
 
-        @media (max-width: 1024px) {
-          .box-pantalla-contacto {
-            width: 80vw;
-            height: 90vh;
-          }
+        .separator {
+          width: 100%;
+          background-color: #6e52f5;
+          height: 3px;
         }
 
-        @media (max-width: 480px) {
-          .box-pantalla-contacto {
-            border-radius: 0px;
-            width: 100vw;
-            height: 100vh;
-          }
-
-          .box-comentario {
-            width: 90%;
-          }
-
-          .box {
-            width: 90%;
-          }
+        .email-container {
+          margin-top: 20px;
+          width: 100%;
         }
+
+        h5 {
+          color: rgb(34, 34, 34);
+        }
+
+        .email-box {
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          margin-top: 5px;
+        }
+
+        input {
+          display: inline-block;
+          padding: 5px;
+          flex: 1;
+          background-color: #acacad;
+          border: none;
+          border-radius: 5px;
+        }
+
+        .btn-copy-email {
+          padding: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          border-radius: 5px;
+          background-color: #6e52f5;
+          margin-left: 5px;
+          cursor: pointer;
+        }
+
+        .social-container {
+          margin-top: 20px;
+          width: 100%;
+        }
+
+        .social-box {
+          width: 100%;
+          display: flex;
+          margin-top: 5px;
+        }
+
+        .a-social {
+          text-decoration: none;
+          margin-right: 10px;
+        }
+
+        .a-cv {
+          text-decoration: none;
+          border-radius: 5px;
+          background-color: rgb(34, 34, 34);
+          padding: 0.5rem 1rem;
+          color: rgb(240, 240, 240);
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+          .contact-window {
+            width: 100%;
+            height: 100%;
+            padding: 1rem 2rem;
+          }
+        } ;
       `}</style>
     </>
   );
