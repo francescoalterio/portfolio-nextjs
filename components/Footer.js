@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ContactWindow from "./ContactWindow";
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
   const [contact, setContact] = useState(false);
@@ -7,30 +8,14 @@ const Footer = () => {
     <>
       {contact && <ContactWindow setContact={setContact} />}
       <footer>
-        <a
-          href="https://github.com/francescoalterio"
-          className="fondo"
-          target="_blank"
-        >
-          <img
-            src="../images/github.png"
-            alt="logo-github"
-            className="github"
-          />
+        <a href="https://github.com/francescoalterio" target="_blank">
+          <IoLogoGithub size={40} color="rgb(240, 240, 240)" />
         </a>
         <button className="btn-contact-footer" onClick={() => setContact(true)}>
           Contact
         </button>
-        <a
-          href="https://www.linkedin.com/in/francescoalterio"
-          className="fondo"
-          target="_blank"
-        >
-          <img
-            src="../images/linkedin.png"
-            alt="logo-linkedin"
-            className="linkedin"
-          />
+        <a href="https://www.linkedin.com/in/francescoalterio" target="_blank">
+          <IoLogoLinkedin size={40} color="rgb(240, 240, 240)" />
         </a>
       </footer>
       <style jsx>{`
@@ -54,27 +39,9 @@ const Footer = () => {
           transition: 0.3s;
         }
 
-        .fondo {
-          background-color: #f0f0f0;
-          border-radius: 200px;
-          width: 50px;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 0 30px;
-          transition: 0.3s;
-        }
-        .github {
-          width: 80%;
-          padding-right: 0px;
-          padding-top: 0px;
-          flex: 0 0 auto;
-        }
-
-        .linkedin {
-          width: 100%;
-          flex: 0 0 auto;
+        a {
+          margin: 0 15px;
+          transition: 0.2s;
         }
 
         .btn-contact-footer:hover {
@@ -82,7 +49,7 @@ const Footer = () => {
           color: rgb(26, 25, 25);
         }
 
-        .fondo:hover {
+        a:hover {
           transform: scale(1.1);
         }
 
