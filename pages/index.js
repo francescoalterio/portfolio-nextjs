@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Presentation from "../components/Presentation";
 import Projects from "../components/Projects";
-import Scope from "../components/Scope";
+import CV from "../components/CV";
 import Skillsets from "../components/Skillsets";
 import Youtube from "../components/Youtube";
 import { projectsDB } from "../projects";
@@ -49,7 +49,7 @@ export default function Home({ youtubeData }) {
       <Presentation />
 
       <main>
-        <Scope />
+        <CV />
 
         <Projects projects={favoriteProjects} isFavorites />
 
