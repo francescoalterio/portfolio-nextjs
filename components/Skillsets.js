@@ -48,6 +48,14 @@ const Skillsets = () => {
             size={120}
           />
           <Skill
+            src={"/images/technologies/node.png"}
+            href={"https://nodejs.org/en/"}
+            alt={"img-node-logo"}
+            technology="Node.js"
+            size={120}
+            needPadding
+          />
+          <Skill
             src={"/images/technologies/tailwind-logo.png"}
             href={"https://tailwindcss.com/"}
             alt={"img-tailwind-logo"}
