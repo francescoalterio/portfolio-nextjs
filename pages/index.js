@@ -73,8 +73,7 @@ export default function Home({ youtubeData }) {
 }
 
 export async function getServerSideProps() {
-  const url =
-    "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDrf8_IRsNtBVNvnkMUvLRw0YEKn5s_pAg&channelId=UCgX7Wp7QOG0PSTuLh-MVN7Q&part=snippet,id&order=date&maxResults=3";
+  const url = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_KEY}&channelId=UCgX7Wp7QOG0PSTuLh-MVN7Q&part=snippet,id&order=date&maxResults=3`;
   const res = await fetch(url);
   const data = await res.json();
   return { props: { youtubeData: data.items || null } };
