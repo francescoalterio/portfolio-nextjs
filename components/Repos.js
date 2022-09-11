@@ -60,7 +60,7 @@ const Repos = ({ repos }) => {
         }
 
         .box-repo {
-          min-width: 300px;
+          min-width: 400px;
           flex: 1;
         }
 
@@ -105,6 +105,18 @@ const Repos = ({ repos }) => {
           -webkit-box-sizing: content-box;
           -moz-box-sizing: content-box;
           box-sizing: content-box;
+        }
+
+        @media (max-width: 500px) {
+          .box-repos {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 30px 30px;
+          }
+          .box-repo {
+            min-width: 200px;
+          }
         }
       `}</style>
     </>
