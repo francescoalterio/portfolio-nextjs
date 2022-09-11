@@ -26,7 +26,7 @@ export default function Home({ youtubeData }) {
         ></meta>
         <meta
           name="description"
-          content="All projects and skills of Francesco Alterio"
+          content="All projects and skills of Francesco Alterio | Portfolio"
         />
         <meta property="og:title" content="Francesco Alterio | Portfolio" />
         <meta
