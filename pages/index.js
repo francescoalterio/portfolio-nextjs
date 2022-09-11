@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import ContactWindow from "../components/ContactWindow";
-import CoreTech from "../components/CoreTech";
+import Repos from "../components/Repos";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Presentation from "../components/Presentation";
@@ -59,7 +59,7 @@ export default function Home({ youtubeData, repos }) {
 
         <Youtube videos={youtubeData} />
 
-        <CoreTech />
+        <Repos repos={repos} />
       </main>
 
       <Footer />
@@ -79,7 +79,7 @@ export async function getServerSideProps() {
   const res = await fetch(url);
   const data = await res.json();
 
-  const githubURL = `https://api.github.com/user/repos`;
+  const githubURL = `https://api.github.com/user/repos?sort=author-date`;
   const resGithub = await fetch(githubURL, {
     headers: {
       Authorization: `token ${process.env.GITHUB_TOKEN}`,

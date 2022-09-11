@@ -25,9 +25,9 @@ const MobileNav = ({ mobileMenuDeploy }) => {
               Videos
             </a>
           </Link>
-          <Link href="#coretech">
+          <Link href="#repositories">
             <a className="a-mobile" id="a-mobile-3">
-              Core Technology
+              Repositories
             </a>
           </Link>
         </div>

@@ -445,6 +445,13 @@ react-icons@^4.4.0:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
   integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
 
+react-repo-card@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-repo-card/-/react-repo-card-2.0.1.tgz#923e605859c39324d9c1dbc48bc630dcfc255c1d"
+  integrity sha512-/+y9gcsP0Hi/U7fM4vHOUO8lYhPKo0s6uiJxseIimID2WVQUwMMQ0a0zWDXTR4xRwM9qcMHJbMEqaQ8ytHVPrg==
+  dependencies:
+    string-replace-to-array "^2.1.0"
+
 react@18.0.0:
   version "18.0.0"
   resolved "https://registry.npmjs.org/react/-/react-18.0.0.tgz"
@@ -547,6 +554,11 @@ source-map-js@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+string-replace-to-array@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/string-replace-to-array/-/string-replace-to-array-2.1.0.tgz#44571dbd33a3e23de31db948b5b84f1b7913fb39"
+  integrity sha512-xG2w4fE5FsTXS4AFxoF3uctByqTIFBX8lFRNcPcIznTVCMXbYvbatkPVLpAo13tfuWtzbWEV6u5bjoE9bOv87w==
 
 string-width@^1.0.1:
   version "1.0.2"

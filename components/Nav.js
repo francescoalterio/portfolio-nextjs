@@ -42,8 +42,8 @@ const Nav = () => {
           <Link href="#videos">
             <a className="a">Videos</a>
           </Link>
-          <Link href="#coretech">
-            <a className="a">Core Technology</a>
+          <Link href="#repositories">
+            <a className="a">Repositories</a>
           </Link>
         </div>
         <button className="btn-contacto" onClick={() => setContact(true)}>
