@@ -123,7 +123,6 @@ const Skillsets = () => {
             size={120}
             needPadding
           />
-          ,
         </div>
       </section>
       <style jsx>{`
