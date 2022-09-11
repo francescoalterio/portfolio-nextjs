@@ -87,5 +87,5 @@ export async function getServerSideProps() {
   });
   const repos = await resGithub.json();
 
-  return { props: { youtubeData: data.items || null, repos } };
+  return { props: { youtubeData: data.items || null, repos: repos || null } };
 }
