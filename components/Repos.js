@@ -2,9 +2,9 @@ import React from "react";
 import RepoCard from "react-repo-card";
 
 const Repos = ({ repos }) => {
-  const repostWithLanguage = repos.filter((repo) => repo.language);
-  const repostNoForked = repostWithLanguage.filter((repo) => !repo.fork);
-  const latestRepos = repostNoForked.slice(0, 6);
+  const repostWithLanguage = repos?.filter((repo) => repo.language);
+  const repostNoForked = repostWithLanguage?.filter((repo) => !repo.fork);
+  const latestRepos = repostNoForked?.slice(0, 6);
   console.log(latestRepos);
   return (
     <>
@@ -14,11 +14,15 @@ const Repos = ({ repos }) => {
         </div>
         <hr className="separator" />
         <div className="box-repos">
-          {latestRepos.map((repo) => (
-            <div key={repo.id} className="box-repo">
-              <RepoCard username="francescoalterio" repository={repo.name} />
-            </div>
-          ))}
+          {repos ? (
+            latestRepos.map((repo) => (
+              <div key={repo.id} className="box-repo">
+                <RepoCard username="francescoalterio" repository={repo.name} />
+              </div>
+            ))
+          ) : (
+            <p>Sorry, Github api requests exceeded.</p>
+          )}
         </div>
       </section>
       <style jsx>{`
