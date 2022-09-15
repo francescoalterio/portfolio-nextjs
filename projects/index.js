@@ -713,7 +713,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       "https://www.npmjs.com/package/fran-testing-library?activeTab=readme",
     repo: "https://github.com/francescoalterio/fran-testing-library",
     language: "javascript",
-    framework: "node",
+    framework: "",
     isFavorite: false,
     techs: [
       <Skill
