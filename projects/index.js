@@ -703,4 +703,34 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       />,
     ],
   },
+  {
+    id: 18,
+    name: "Fran Testing Library",
+    src: "/images/projects/fran-testing-library.png",
+    alt: "img-fran-testing-library",
+    description: "Mini test library inspired by jest.",
+    preview:
+      "https://www.npmjs.com/package/fran-testing-library?activeTab=readme",
+    repo: "https://github.com/francescoalterio/fran-testing-library",
+    language: "javascript",
+    framework: "node",
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/node.png"}
+        href={"https://nodejs.org/en/"}
+        alt={"img-node-logo"}
+        technology="Node.js"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
 ];
