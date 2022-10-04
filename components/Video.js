@@ -1,9 +1,6 @@
 import React from "react";
 
 const Video = ({ youtubeVideo }) => {
-  React.useEffect(() => {
-    console.log(youtubeVideo);
-  }, []);
   return (
     <div className="box-video">
       <iframe

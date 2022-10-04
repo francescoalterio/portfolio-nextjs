@@ -10,8 +10,7 @@ export const projectsDB = [
       "Filter of gods for the video game Smite using Javscript vanilla",
     preview: "https://francescoalterio.github.io/smitefilter/",
     repo: "https://github.com/francescoalterio/smitefilter",
-    language: "javascript",
-    framework: "html",
+    coreTechs: ["Javascript", "HTML"],
     isFavorite: false,
     techs: [
       <Skill
@@ -45,8 +44,7 @@ export const projectsDB = [
     description: "Calculator developed with React.",
     preview: "https://react-calculator-fran.netlify.app",
     repo: "https://github.com/francescoalterio/react-calculator",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
     isFavorite: false,
     techs: [
       <Skill
@@ -80,8 +78,7 @@ export const projectsDB = [
     description: "List of the most famous cryptocurrencies and their prices.",
     preview: "https://stackblitz.com/edit/cryptocurrencylist?file=src%2FApp.js",
     repo: "https://github.com/francescoalterio/react-cryptocurrencylist",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
     isFavorite: false,
     techs: [
       <Skill
@@ -115,8 +112,7 @@ export const projectsDB = [
     description: "Converter from one currency to another.",
     preview: "https://stackblitz.com/edit/react-e9kmsj?file=README.md",
     repo: "https://github.com/francescoalterio/money-converter",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
     isFavorite: false,
     techs: [
       <Skill
@@ -150,8 +146,7 @@ export const projectsDB = [
     description: "App of questions of various categories.",
     preview: "https://stackblitz.com/edit/react-scdye8?file=README.md",
     repo: "https://github.com/francescoalterio/quiz-app",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
     isFavorite: false,
     techs: [
       <Skill
@@ -186,8 +181,7 @@ export const projectsDB = [
       "Clock pomodoro to increase the productivity of your study using React",
     preview: "https://francescopomodoro.netlify.app/",
     repo: "https://github.com/francescoalterio/pomodoro-timer",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
     isFavorite: false,
     techs: [
       <Skill
@@ -221,8 +215,7 @@ export const projectsDB = [
     description: "Consuming joke API with react.",
     preview: "https://stackblitz.com/edit/react-e6wwrx?file=README.md",
     repo: "https://github.com/francescoalterio/react-API-Joke",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
     isFavorite: false,
     techs: [
       <Skill
@@ -256,8 +249,8 @@ export const projectsDB = [
     description: `Study panel for Web programming. It has a user system using Firebase and stores each of the technologies that you are learning and those learned.`,
     preview: "https://studypanel.vercel.app/",
     repo: "https://github.com/francescoalterio/react-study-panel",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript", "React.js"],
+
     isFavorite: true,
     techs: [
       <Skill
@@ -301,8 +294,7 @@ export const projectsDB = [
     description: `Program that allows you to send files of any type between a PC and a mobile. You only need to start the server on the machine which has the core of the entire ecosystem, the app being the client with which to interact.`,
     preview: "",
     repo: "https://github.com/francescoalterio/dualsend-mobileapp",
-    language: "javascript",
-    framework: "express",
+    coreTechs: ["Javascript", "React Native"],
     isFavorite: false,
     techs: [
       <Skill
@@ -361,8 +353,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
 7. Completion of projects and tasks.`,
     app: "https://play.google.com/store/apps/details?id=com.francescox5.projectmanager",
     repo: "https://github.com/francescoalterio/project-manager",
-    language: "javascript",
-    framework: "reactnative",
+    coreTechs: ["Javascript", "React Native"],
     isFavorite: true,
     techs: [
       <Skill
@@ -427,8 +418,8 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
   Filter pokemons by their types to learn more in depth.`,
     app: "https://play.google.com/store/apps/details?id=com.franstudios.pokebook",
     repo: "https://github.com/francescoalterio/pokebook",
-    language: "javascript",
-    framework: "reactnative",
+    coreTechs: ["Javascript", "React Native"],
+
     isFavorite: true,
     techs: [
       <Skill
@@ -478,8 +469,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
       "IP Finder app allows you to locate the IP location of any IP address.IP Finder allows you to locate and search any IP anywhere in the world for free. The app provides you with a lot of information about the located IP such as location, time zone, etc.",
     app: "https://play.google.com/store/apps/details?id=com.franstudios.ipfinder",
     repo: "https://github.com/francescoalterio/ip-finder",
-    language: "javascript",
-    framework: "reactnative",
+    coreTechs: ["Javascript", "React Native"],
     isFavorite: false,
     techs: [
       <Skill
@@ -521,8 +511,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
       "Fran Studios was born from the idea of creating a personal brand on mobile application development. Simple, pleasant apps that solve user problems directly, whether they are tools or entertainment.",
     preview: "https://franstudios.vercel.app/",
     repo: "https://github.com/francescoalterio/fran-studios",
-    language: "javascript",
-    framework: "nextjs",
+    coreTechs: ["Javascript", "Next.js"],
     isFavorite: true,
     techs: [
       <Skill
@@ -557,8 +546,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
       "Cocktail Recipe App is a mobile application that helps you find cocktail recipes and drink recipes.",
     app: "https://play.google.com/store/apps/details?id=com.franstudios.cocktaillibrary",
     repo: "https://github.com/francescoalterio/cocktails-app",
-    language: "javascript",
-    framework: "reactnative",
+    coreTechs: ["Javascript", "React Native"],
     isFavorite: true,
     techs: [
       <Skill
@@ -609,8 +597,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
 The app is based on a simple login/register with a home where you can create and delete posts, the curious thing about the app is that it has a session cookie so you don't have to log in every time you enter the app.`,
     preview: "",
     repo: "https://github.com/francescoalterio/login-api-express-typescript",
-    language: "typescript",
-    framework: "express",
+    coreTechs: ["Typescript", "Express"],
     isFavorite: false,
     techs: [
       <Skill
@@ -654,8 +641,7 @@ The app is based on a simple login/register with a home where you can create and
 The app is built with Monaco Editor, the same editor that VS Code uses.`,
     preview: "https://franeditor.vercel.app/",
     repo: "https://github.com/francescoalterio/fran-editor",
-    language: "javascript",
-    framework: "react",
+    coreTechs: ["Javascript"],
     isFavorite: true,
     techs: [
       <Skill
@@ -689,8 +675,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     description: "Calculator developed with Python and Tkinter.",
     preview: "",
     repo: "https://github.com/francescoalterio/fran-calculator-python",
-    language: "python",
-    framework: "",
+    coreTechs: ["Python", "TKinter"],
     isFavorite: false,
     techs: [
       <Skill
@@ -712,8 +697,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     preview:
       "https://www.npmjs.com/package/fran-testing-library?activeTab=readme",
     repo: "https://github.com/francescoalterio/fran-testing-library",
-    language: "javascript",
-    framework: "",
+    coreTechs: ["Javascript"],
     isFavorite: false,
     techs: [
       <Skill

@@ -5,7 +5,6 @@ const Repos = ({ repos }) => {
   const repostWithLanguage = repos?.filter((repo) => repo.language);
   const repostNoForked = repostWithLanguage?.filter((repo) => !repo.fork);
   const latestRepos = repostNoForked?.slice(0, 6);
-  console.log(latestRepos);
   return (
     <>
       <section className="repos" id="repositories">

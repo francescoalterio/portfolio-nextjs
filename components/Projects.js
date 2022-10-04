@@ -17,8 +17,7 @@ const Projects = ({ projects, isAll }) => {
             <Project
               key={x.id}
               name={x.name}
-              language={x.language}
-              framework={x.framework}
+              coreTechs={x.coreTechs}
               src={x.src}
               alt={x.alt}
               id={x.id}

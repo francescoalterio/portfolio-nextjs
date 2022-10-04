@@ -15,8 +15,6 @@ export default function Home({ youtubeData, repos }) {
   const projectsReversed = [...projectsDB].reverse();
   const favoriteProjects = projectsReversed.filter((x) => x.isFavorite);
 
-  console.log(repos);
-
   return (
     <>
       <Head>

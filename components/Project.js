@@ -3,8 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { languagesImgFile } from "../constants/languagesImgFile";
+import CardTech from "./cardTech";
 
-const Project = ({ name, language, framework, src, alt, id }) => {
+const Project = ({ name, coreTechs, src, alt, id }) => {
   const router = useRouter();
   return (
     <>
@@ -22,40 +23,9 @@ const Project = ({ name, language, framework, src, alt, id }) => {
           <h3>{name}</h3>
         </div>
         <div className="container-info">
-          <div
-            style={{
-              borderRadius: "7px",
-              overflow: "hidden",
-              width: 50,
-              height: 50,
-            }}
-          >
-            <Image
-              src={`/images/technologies/${languagesImgFile[language]}`}
-              alt={`logo-${language}`}
-              objectFit="cover"
-              width={50}
-              height={50}
-            />
-          </div>
-          {framework && (
-            <div
-              style={{
-                borderRadius: "7px",
-                overflow: "hidden",
-                width: 50,
-                height: 50,
-                backgroundColor: "#383838",
-              }}
-            >
-              <Image
-                src={`/images/technologies/${languagesImgFile[framework]}`}
-                width={50}
-                height={50}
-                alt={`logo-${framework}`}
-              />
-            </div>
-          )}
+          {coreTechs.map((x) => (
+            <CardTech content={x} />
+          ))}
         </div>
         <Link
           href={{
@@ -111,7 +81,8 @@ const Project = ({ name, language, framework, src, alt, id }) => {
           margin-bottom: 15px;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
+          gap: 5px
         }
 
         .project-details-link {
