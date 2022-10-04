@@ -598,7 +598,7 @@ The app is based on a simple login/register with a home where you can create and
     preview: "",
     repo: "https://github.com/francescoalterio/login-api-express-typescript",
     coreTechs: ["Typescript", "Express"],
-    isFavorite: true,
+    isFavorite: false,
     techs: [
       <Skill
         src={"/images/technologies/express.png"}
@@ -714,6 +714,40 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         technology="Node.js"
         size={80}
         needPadding
+      />,
+    ],
+  },
+  {
+    id: 18,
+    name: "Gym Timer",
+    src: "/images/projects/gym-timer.png",
+    alt: "img-gymtimer",
+    description: "Timers for exercise, both simple and supersets.",
+    preview: "https://fran-gym-timer.netlify.app/",
+    repo: "https://github.com/francescoalterio/gym-timer",
+    coreTechs: ["Javascript", "React.js"],
+    isFavorite: true,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactjs.org/"}
+        alt={"img-react-logo"}
+        technology="React"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/tailwind-logo.png"}
+        href={"https://tailwindcss.com/"}
+        alt={"img-tailwind-logo"}
+        technology="Tailwindcss"
+        size={80}
       />,
     ],
   },
