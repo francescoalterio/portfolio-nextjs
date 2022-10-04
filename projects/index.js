@@ -420,7 +420,7 @@ The app is the easiest and fastest way to manage your projects and tasks, from s
     repo: "https://github.com/francescoalterio/pokebook",
     coreTechs: ["Javascript", "React Native"],
 
-    isFavorite: true,
+    isFavorite: false,
     techs: [
       <Skill
         src={"/images/technologies/react-logo.png"}
@@ -598,7 +598,7 @@ The app is based on a simple login/register with a home where you can create and
     preview: "",
     repo: "https://github.com/francescoalterio/login-api-express-typescript",
     coreTechs: ["Typescript", "Express"],
-    isFavorite: false,
+    isFavorite: true,
     techs: [
       <Skill
         src={"/images/technologies/express.png"}
