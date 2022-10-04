@@ -718,7 +718,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     ],
   },
   {
-    id: 18,
+    id: 19,
     name: "Gym Timer",
     src: "/images/projects/gym-timer.png",
     alt: "img-gymtimer",
