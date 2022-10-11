@@ -751,4 +751,47 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       />,
     ],
   },
+  {
+    id: 20,
+    name: "Login Simulation",
+    src: "/images/projects/login-simulation-php.png",
+    alt: "img-login-simulation-php",
+    description: "Simulation of login with PHP.",
+    preview:
+      "https://francescoalterio.000webhostapp.com/webs/login-simulation/login.php",
+    repo: "https://github.com/francescoalterio/login-simulation",
+    coreTechs: ["PHP"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/php.png"}
+        href={"https://www.php.net"}
+        alt={"img-php-logo"}
+        technology="PHP"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
+  {
+    id: 21,
+    name: "PHP Calculator",
+    src: "/images/projects/php-calculator.png",
+    alt: "img-php-calculator",
+    description: "Calculator created only with PHP.",
+    preview: "https://francescoalterio.000webhostapp.com/webs/calculator-php/",
+    repo: "https://github.com/francescoalterio/calculator-php",
+    coreTechs: ["PHP"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/php.png"}
+        href={"https://www.php.net"}
+        alt={"img-php-logo"}
+        technology="PHP"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
 ];
