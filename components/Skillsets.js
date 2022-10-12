@@ -123,6 +123,14 @@ const Skillsets = () => {
             size={120}
             needPadding
           />
+          <Skill
+            src={"/images/technologies/php.png"}
+            href={"https://www.php.net"}
+            alt={"img-php-logo"}
+            technology="PHP"
+            size={120}
+            needPadding
+          />
         </div>
       </section>
       <style jsx>{`

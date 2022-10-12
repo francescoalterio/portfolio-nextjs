@@ -753,14 +753,14 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
   },
   {
     id: 20,
-    name: "Login Simulation",
-    src: "/images/projects/login-simulation-php.png",
+    name: "Login Form Simulation",
+    src: "/images/projects/login-form-simulation-php.png",
     alt: "img-login-simulation-php",
-    description: "Simulation of login with PHP.",
+    description: "Simulation of login with PHP and MySQL.",
     preview:
-      "https://francescoalterio.000webhostapp.com/webs/login-simulation/login.php",
-    repo: "https://github.com/francescoalterio/login-simulation",
-    coreTechs: ["PHP"],
+      "https://francescoalteriog.000webhostapp.com/login-form-simulation",
+    repo: "https://github.com/francescoalterio/login-form-simulation-php",
+    coreTechs: ["PHP", "MySQL"],
     isFavorite: false,
     techs: [
       <Skill
@@ -768,6 +768,14 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         href={"https://www.php.net"}
         alt={"img-php-logo"}
         technology="PHP"
+        size={80}
+        needPadding
+      />,
+      <Skill
+        src={"/images/technologies/mysql.png"}
+        href={"https://www.mysql.com/"}
+        alt={"img-mysql-logo"}
+        technology="MySQL"
         size={80}
         needPadding
       />,
@@ -779,7 +787,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     src: "/images/projects/php-calculator.png",
     alt: "img-php-calculator",
     description: "Calculator created only with PHP.",
-    preview: "https://francescoalterio.000webhostapp.com/webs/calculator-php/",
+    preview: "https://francescoalteriog.000webhostapp.com/calculator-php/",
     repo: "https://github.com/francescoalterio/calculator-php",
     coreTechs: ["PHP"],
     isFavorite: false,
