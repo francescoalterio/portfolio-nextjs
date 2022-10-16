@@ -835,6 +835,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         alt={"img-bootstrap-logo"}
         technology="Bootstrap"
         size={80}
+        needPadding
       />,
     ],
   },
