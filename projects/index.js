@@ -802,4 +802,33 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       />,
     ],
   },
+  {
+    id: 22,
+    name: "Task list CRUD PHP",
+    src: "/images/projects/crud-php.png",
+    alt: "img-crud-php",
+    description: "Basic Task List, create, complete, edit and delete tasks.",
+    preview: "https://francescoalteriog.000webhostapp.com/crud-php/",
+    repo: "https://github.com/francescoalterio/CRUD-PHP",
+    coreTechs: ["PHP", "MySQL"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/php.png"}
+        href={"https://www.php.net"}
+        alt={"img-php-logo"}
+        technology="PHP"
+        size={80}
+        needPadding
+      />,
+      <Skill
+        src={"/images/technologies/mysql.png"}
+        href={"https://www.mysql.com/"}
+        alt={"img-mysql-logo"}
+        technology="MySQL"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
 ];
