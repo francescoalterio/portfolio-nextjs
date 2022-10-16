@@ -40,12 +40,14 @@ const Projects = ({ projects, isAll }) => {
               <ButtonProjectFilter
                 icon={<IoFileTrayFull size={30} />}
                 name="all"
+                language={language}
                 setLanguage={setLanguage}
               />
             ) : (
               <ButtonProjectFilter
                 icon={<IoStar size={30} />}
                 name="favorites"
+                language={language}
                 setLanguage={setLanguage}
               />
             )}
@@ -53,21 +55,25 @@ const Projects = ({ projects, isAll }) => {
             <ButtonProjectFilter
               icon={<SiJavascript size={30} />}
               name="javascript"
+              language={language}
               setLanguage={setLanguage}
             />
             <ButtonProjectFilter
               icon={<SiTypescript size={30} />}
               name="typescript"
+              language={language}
               setLanguage={setLanguage}
             />
             <ButtonProjectFilter
               icon={<SiPhp size={30} />}
               name="php"
+              language={language}
               setLanguage={setLanguage}
             />
             <ButtonProjectFilter
               icon={<SiPython size={30} />}
               name="python"
+              language={language}
               setLanguage={setLanguage}
             />
           </ProjectFilter>
