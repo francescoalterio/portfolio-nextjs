@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ButtonProjectFilter({ icon, name, setLanguage }) {
+function ButtonProjectFilter({ icon, name, language, setLanguage }) {
   const [hover, setHover] = useState(false);
   const namePascalCase = name
     .split("")
@@ -26,7 +26,7 @@ function ButtonProjectFilter({ icon, name, setLanguage }) {
           align-items: center;
           cursor: pointer;
           transition: 0.1s;
-          color: #292929;
+          color: ${language === name ? "#6e52f5" : "#292929"};
         }
 
         button:hover {
