@@ -36,18 +36,20 @@ const Projects = ({ projects, isAll }) => {
         <hr className="separator" />
         <div className="box-filter">
           <ProjectFilter>
-            {isAll && (
+            {isAll ? (
               <ButtonProjectFilter
                 icon={<IoFileTrayFull size={30} />}
                 name="all"
                 setLanguage={setLanguage}
               />
+            ) : (
+              <ButtonProjectFilter
+                icon={<IoStar size={30} />}
+                name="favorites"
+                setLanguage={setLanguage}
+              />
             )}
-            <ButtonProjectFilter
-              icon={<IoStar size={30} />}
-              name="favorites"
-              setLanguage={setLanguage}
-            />
+
             <ButtonProjectFilter
               icon={<SiJavascript size={30} />}
               name="javascript"
