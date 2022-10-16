@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Project from "./Project";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import ProjectFilter from "./ProjectFilter";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPhp,
+  SiPython,
+  SiAbstract,
+} from "react-icons/si";
+import { IoStar, IoFileTrayFull } from "react-icons/io5";
+import ButtonProjectFilter from "./ButtonProjectFilter";
 
 const Projects = ({ projects, isAll }) => {
+  const [language, setLanguage] = useState(isAll ? "all" : "favorites");
+
+  const projectsFiltered =
+    language === "all"
+      ? [...projects]
+      : language === "favorites"
+      ? projects.filter((x) => x.isFavorite)
+      : projects.filter((x) => {
+          const techsToLowerCase = x.coreTechs.map((x) => x.toLowerCase());
+          return techsToLowerCase.includes(language);
+        });
+
   const router = useRouter();
   return (
     <>
@@ -12,8 +34,44 @@ const Projects = ({ projects, isAll }) => {
           <h2 className="title">PROJECTS</h2>
         </div>
         <hr className="separator" />
+        <div className="box-filter">
+          <ProjectFilter>
+            {isAll && (
+              <ButtonProjectFilter
+                icon={<IoFileTrayFull size={30} />}
+                name="all"
+                setLanguage={setLanguage}
+              />
+            )}
+            <ButtonProjectFilter
+              icon={<IoStar size={30} />}
+              name="favorites"
+              setLanguage={setLanguage}
+            />
+            <ButtonProjectFilter
+              icon={<SiJavascript size={30} />}
+              name="javascript"
+              setLanguage={setLanguage}
+            />
+            <ButtonProjectFilter
+              icon={<SiTypescript size={30} />}
+              name="typescript"
+              setLanguage={setLanguage}
+            />
+            <ButtonProjectFilter
+              icon={<SiPhp size={30} />}
+              name="php"
+              setLanguage={setLanguage}
+            />
+            <ButtonProjectFilter
+              icon={<SiPython size={30} />}
+              name="python"
+              setLanguage={setLanguage}
+            />
+          </ProjectFilter>
+        </div>
         <div className="box-proyectos">
-          {projects.map((x) => (
+          {projectsFiltered.map((x) => (
             <Project
               key={x.id}
               name={x.name}
@@ -102,6 +160,13 @@ const Projects = ({ projects, isAll }) => {
           -webkit-box-sizing: content-box;
           -moz-box-sizing: content-box;
           box-sizing: content-box;
+        }
+
+        .box-filter {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
         }
 
         .box-proyectos {

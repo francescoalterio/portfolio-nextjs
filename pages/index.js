@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import ContactWindow from "../components/ContactWindow";
 import Repos from "../components/Repos";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
@@ -13,7 +12,6 @@ import { projectsDB } from "../projects";
 
 export default function Home({ youtubeData, repos }) {
   const projectsReversed = [...projectsDB].reverse();
-  const favoriteProjects = projectsReversed.filter((x) => x.isFavorite);
 
   return (
     <>
@@ -51,7 +49,7 @@ export default function Home({ youtubeData, repos }) {
       <main>
         <CV />
 
-        <Projects projects={favoriteProjects} isFavorites />
+        <Projects projects={projectsReversed} />
 
         <Skillsets />
 
@@ -73,17 +71,21 @@ export default function Home({ youtubeData, repos }) {
 }
 
 export async function getServerSideProps() {
-  const url = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_KEY}&channelId=UCgX7Wp7QOG0PSTuLh-MVN7Q&part=snippet,id&order=date&maxResults=3`;
-  const res = await fetch(url);
-  const data = await res.json();
+  /*
+    const url = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_KEY}&channelId=UCgX7Wp7QOG0PSTuLh-MVN7Q&part=snippet,id&order=date&maxResults=3`;
+    const res = await fetch(url);
+    const data = await res.json();
 
-  const githubURL = `https://api.github.com/user/repos?sort=author-date`;
-  const resGithub = await fetch(githubURL, {
-    headers: {
-      Authorization: `token ${process.env.GITHUB_TOKEN}`,
-    },
-  });
-  const repos = await resGithub.json();
+    const githubURL = `https://api.github.com/user/repos?sort=author-date`;
+    const resGithub = await fetch(githubURL, {
+      headers: {
+        Authorization: `token ${process.env.GITHUB_TOKEN}`,
+      },
+    });
+    const repos = await resGithub.json();
 
-  return { props: { youtubeData: data.items || null, repos: repos || null } };
+    return { props: { youtubeData: data.items || null, repos: repos || null } };
+  */
+
+  return { props: { youtubeData: null, repos: null } };
 }
