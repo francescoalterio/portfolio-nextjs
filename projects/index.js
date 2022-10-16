@@ -810,7 +810,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     description: "Basic Task List, create, complete, edit and delete tasks.",
     preview: "https://francescoalteriog.000webhostapp.com/crud-php/",
     repo: "https://github.com/francescoalterio/CRUD-PHP",
-    coreTechs: ["PHP", "MySQL"],
+    coreTechs: ["PHP", "MySQL", "Bootstrap"],
     isFavorite: false,
     techs: [
       <Skill
@@ -828,6 +828,13 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         technology="MySQL"
         size={80}
         needPadding
+      />,
+      <Skill
+        src={"/images/technologies/bootstrap.png"}
+        href={"https://getbootstrap.com/"}
+        alt={"img-bootstrap-logo"}
+        technology="Bootstrap"
+        size={80}
       />,
     ],
   },
