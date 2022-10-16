@@ -26,7 +26,7 @@ function ButtonProjectFilter({ icon, name, language, setLanguage }) {
           align-items: center;
           cursor: pointer;
           transition: 0.1s;
-          color: ${language === name ? "#292929" : "#4a4949"};
+          color: ${language === name ? "#292929" : "#595959"};
         }
 
         button:hover {
