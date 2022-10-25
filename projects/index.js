@@ -839,4 +839,41 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       />,
     ],
   },
+  {
+    id: 23,
+    name: "Users API",
+    src: "/images/projects/users-api-laravel.png",
+    alt: "img-users-api-laravel",
+    description: "Random Users API built with Laravel. Perfect for testing any frontend.",
+    preview: "https://users-api.fly.dev/",
+    repo: "https://github.com/francescoalterio/users-api-php",
+    coreTechs: ["PHP", "Laravel", "Bootstrap"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/php.png"}
+        href={"https://www.php.net"}
+        alt={"img-php-logo"}
+        technology="PHP"
+        size={80}
+        needPadding
+      />,
+      <Skill
+        src={"/images/technologies/laravel.png"}
+        href={"https://laravel.com/"}
+        alt={"img-laravel-logo"}
+        technology="Laravel"
+        size={80}
+        needPadding
+      />,
+      <Skill
+        src={"/images/technologies/bootstrap.png"}
+        href={"https://getbootstrap.com/"}
+        alt={"img-bootstrap-logo"}
+        technology="Bootstrap"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
 ];
