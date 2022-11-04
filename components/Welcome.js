@@ -1,14 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-const CV = () => {
+const Welcome = () => {
   return (
     <>
       <section className="capacidad">
-        <h3>Download my CV!</h3>
-        <Link href="/cv.pdf">
-          <a target="__black">Go to CV</a>
-        </Link>
+        <h3>Hi, I'm Francesco Alterio, Fullstack Developer, Welcome to my portfolio!</h3>
+        
       </section>
       <style jsx>{`
         section {
@@ -24,7 +22,9 @@ const CV = () => {
         h3 {
           color: rgb(240, 240, 240);
           font-weight: 700;
-          font-size: 25px
+          font-size: 25px;
+          padding: 0 100px;
+          text-align: center;
         }
 
         a {
@@ -42,9 +42,23 @@ const CV = () => {
           background-color: rgb(240, 240, 240);
           color: #000000;
         }
+
+        @media (max-width: 530px) {
+          h3 {
+            font-size: 20px;
+            padding: 0 50px;
+          }
+        }
+
+        @media (max-width: 350px) {
+          h3 {
+            font-size: 20px;
+            padding: 0 25px;
+          }
+        }
       `}</style>
     </>
   );
 };
 
-export default CV;
+export default Welcome;
