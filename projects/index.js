@@ -876,4 +876,34 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       />,
     ],
   },
+  {
+    id: 24,
+    name: "Skywind",
+    src: "/images/projects/skywind.png",
+    alt: "img-skywind",
+    description: `Skywind makes it easy to create web pages with Server Side Rendering and Javascript. Its simplicity and low dependencies allow it to be run on any node server. Skywind allows you to granulate your pages into small components that can be reused anywhere on your website.
+
+    It has a very intuitive, powerful and easy to learn routing system, it also allows you to create APIs using node's HTTP module.`,
+    preview: "https://www.npmjs.com/package/skywind",
+    repo: "https://github.com/francescoalterio/skywind",
+    coreTechs: ["Javascript", "Node.js"],
+    isFavorite: true,
+    techs: [
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/node.png"}
+        href={"https://nodejs.org/en/"}
+        alt={"img-node-logo"}
+        technology="Node.js"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
 ];
