@@ -906,4 +906,32 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
       />,
     ],
   },
+  {
+    id: 25,
+    name: "Snake Game",
+    src: "/images/projects/snakegame.png",
+    alt: "img-snakegame",
+    description:
+      "Classic snake game using object-oriented programming in Typescript.",
+    preview: "https://francescoalterio.github.io/snake-game-compiled/",
+    repo: "https://github.com/francescoalterio/snake-game",
+    coreTechs: ["Typescript", "HTML"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/html.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"}
+        alt={"img-html5-logo"}
+        technology="HTML"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/typescript.png"}
+        href={"https://www.typescriptlang.org/"}
+        alt={"img-typescript-logo"}
+        technology="Typesript"
+        size={80}
+      />,
+    ],
+  },
 ];
