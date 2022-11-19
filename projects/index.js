@@ -919,17 +919,17 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     isFavorite: false,
     techs: [
       <Skill
-        src={"/images/technologies/html.svg"}
-        href={"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"}
-        alt={"img-html5-logo"}
-        technology="HTML"
-        size={80}
-      />,
-      <Skill
         src={"/images/technologies/typescript.png"}
         href={"https://www.typescriptlang.org/"}
         alt={"img-typescript-logo"}
         technology="Typesript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/html.svg"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"}
+        alt={"img-html5-logo"}
+        technology="HTML"
         size={80}
       />,
     ],
