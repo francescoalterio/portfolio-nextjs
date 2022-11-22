@@ -1,11 +1,9 @@
 import React, { useState } from "react";
+import { toPascalCase } from "../utils/toPascalCase";
 
 function ButtonProjectFilter({ icon, name, language, setLanguage }) {
   const [hover, setHover] = useState(false);
-  const namePascalCase = name
-    .split("")
-    .map((x, i) => (i === 0 ? x.toUpperCase() : x.toLowerCase()))
-    .join("");
+  const namePascalCase = toPascalCase(name)
   return (
     <>
       <button
