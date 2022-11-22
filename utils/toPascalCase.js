@@ -1,3 +1,6 @@
 export function toPascalCase(value) {
-    return value.split("").map((x, i) => (i === 0 ? x.toUpperCase() : x.toLowerCase())).join("");
+    if(typeof value !== 'string') return
+    return value.split(" ").map(word => {
+        return word.split("").map((x, i) => (i === 0 ? x.toUpperCase() : x.toLowerCase())).join("");
+    }).join(" ")
 }
