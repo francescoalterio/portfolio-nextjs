@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { languagesImgFile } from "../constants/languagesImgFile";
 import CardTech from "./CardTech";
 
 const Project = ({ name, coreTechs, src, alt, id }) => {
