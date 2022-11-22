@@ -12,20 +12,13 @@ import {
 } from "react-icons/si";
 import { IoStar, IoFileTrayFull } from "react-icons/io5";
 import ButtonProjectFilter from "./ButtonProjectFilter";
+import { filterProjectsByTech } from "../utils/filterProjectsByTech";
 
 const Projects = ({ projects, isAll }) => {
   const [language, setLanguage] = useState(isAll ? "all" : "favorites");
 
-  const projectsFiltered =
-    language === "all"
-      ? [...projects]
-      : language === "favorites"
-      ? projects.filter((x) => x.isFavorite)
-      : projects.filter((x) => {
-          const techsToLowerCase = x.coreTechs.map((x) => x.toLowerCase());
-          return techsToLowerCase.includes(language);
-        });
-
+  const projectsFiltered = filterProjectsByTech(projects, language);
+    
   const router = useRouter();
   return (
     <>
