@@ -1,5 +1,5 @@
-import { filterProjectsByTech } from "../utils/filterProjectsByTech";
-import { projectsDB } from "../projects";
+import { filterProjectsByTech } from "../../utils/filterProjectsByTech";
+import { projectsDB } from "../../projects";
 
 describe("filterProjectsByTech", () => {
 

@@ -1,4 +1,4 @@
-import { toPascalCase } from "../utils/toPascalCase";
+import { toPascalCase } from "../../utils/toPascalCase";
 
 describe('toPascalCase', () => {
     test('debe devolver un string',() => {
