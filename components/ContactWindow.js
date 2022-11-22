@@ -7,18 +7,14 @@ import {
   IoCloseCircleSharp,
   IoCheckmarkCircleSharp,
 } from "react-icons/io5";
+import { copyTextInClipboard } from "../utils/copyTextInClipboard";
 
 const ContactWindow = ({ setContact }) => {
   const [isEmailCopy, setIsEmailCopy] = useState(false);
   const copyEmail = () => {
-    if (!navigator.clipboard) {
-      alert("Clipboard API not available");
-      return;
-    } else {
-      navigator.clipboard.writeText("francescoalteriog@gmail.com").then(() => {
-        setIsEmailCopy(true);
-      });
-    }
+    copyTextInClipboard("francescoalteriog@gmail.com").then(() => {
+      setIsEmailCopy(true);
+    });
   };
 
   return (
