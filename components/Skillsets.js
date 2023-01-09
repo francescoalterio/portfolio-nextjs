@@ -136,6 +136,7 @@ const Skillsets = () => {
             href={"https://vuejs.org/"}
             alt={"img-vue-logo"}
             technology="Vue"
+            needPadding
             size={120}
           />
         </div>

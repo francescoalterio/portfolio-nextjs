@@ -958,6 +958,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         href={"https://vuejs.org/"}
         alt={"img-vue-logo"}
         technology="Vue"
+        needPadding
         size={80}
       />,
       <Skill
