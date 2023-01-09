@@ -137,7 +137,6 @@ const Skillsets = () => {
             alt={"img-vue-logo"}
             technology="Vue"
             size={120}
-            needPadding
           />
         </div>
       </section>

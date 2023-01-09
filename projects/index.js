@@ -959,7 +959,6 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         alt={"img-vue-logo"}
         technology="Vue"
         size={80}
-        needPadding
       />,
       <Skill
         src={"/images/technologies/tailwind-logo.png"}
