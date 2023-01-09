@@ -131,6 +131,15 @@ const Skillsets = () => {
             size={120}
             needPadding
           />
+          <Skill
+            src={"/images/technologies/vue-logo.png"}
+            href={"https://vuejs.org/"}
+            alt={"img-vue-logo"}
+            technology="Vue"
+            size={120}
+            needPadding
+          />
+          ,
         </div>
       </section>
       <style jsx>{`

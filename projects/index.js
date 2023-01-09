@@ -844,7 +844,8 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     name: "Users API",
     src: "/images/projects/users-api-laravel.png",
     alt: "img-users-api-laravel",
-    description: "Random Users API built with Laravel. Perfect for testing any frontend.",
+    description:
+      "Random Users API built with Laravel. Perfect for testing any frontend.",
     preview: "https://users-api.fly.dev/",
     repo: "https://github.com/francescoalterio/users-api-php",
     coreTechs: ["PHP", "Laravel", "Bootstrap"],
@@ -919,10 +920,10 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     isFavorite: false,
     techs: [
       <Skill
-        src={"/images/technologies/typescript.png"}
-        href={"https://www.typescriptlang.org/"}
-        alt={"img-typescript-logo"}
-        technology="Typesript"
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
         size={80}
       />,
       <Skill
@@ -930,6 +931,41 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         href={"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"}
         alt={"img-html5-logo"}
         technology="HTML"
+        size={80}
+      />,
+    ],
+  },
+  {
+    id: 26,
+    name: "Project Manager Vue",
+    src: "/images/projects/project-manager-vue.png",
+    alt: "img-project-manager-vue",
+    description: "CRUD project manager with Vue.js",
+    preview: "https://fran-project-manager.vercel.app/",
+    repo: "https://github.com/francescoalterio/web-project-manager",
+    coreTechs: ["Javascript", "Vue"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/javascript-2752148-2284965.png"}
+        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+        alt={"img-javascript-logo"}
+        technology="Javascript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/vue-logo.png"}
+        href={"https://vuejs.org/"}
+        alt={"img-vue-logo"}
+        technology="Vue"
+        size={80}
+        needPadding
+      />,
+      <Skill
+        src={"/images/technologies/tailwind-logo.png"}
+        href={"https://tailwindcss.com/"}
+        alt={"img-tailwind-logo"}
+        technology="Tailwindcss"
         size={80}
       />,
     ],
