@@ -968,6 +968,16 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         technology="Tailwindcss"
         size={80}
       />,
+      <Skill
+        src={"/images/technologies/firebase.png"}
+        href={
+          "https://firebase.google.com/?gclid=CjwKCAjw2rmWBhB4EiwAiJ0mtWoGToqePmnPSACjkRRFf7J2n6JzXoJkwSj88GymbZw6Bd6EgSysExoCT2AQAvD_BwE&gclsrc=aw.ds"
+        }
+        alt={"img-firebase-logo"}
+        technology="Firebase"
+        size={80}
+        needPadding
+      />,
     ],
   },
 ];
