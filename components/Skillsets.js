@@ -37,7 +37,7 @@ const Skillsets = () => {
             src={"/images/technologies/typescript.png"}
             href={"https://www.typescriptlang.org/"}
             alt={"img-typescript-logo"}
-            technology="Typesript"
+            technology="Typescript"
             size={120}
           />
           <Skill

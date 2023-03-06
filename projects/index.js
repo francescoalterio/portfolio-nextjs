@@ -611,7 +611,7 @@ The app is based on a simple login/register with a home where you can create and
         src={"/images/technologies/typescript.png"}
         href={"https://www.typescriptlang.org/"}
         alt={"img-typescript-logo"}
-        technology="Typesript"
+        technology="Typescript"
         size={80}
       />,
       <Skill
@@ -923,7 +923,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         src={"/images/technologies/typescript.png"}
         href={"https://www.typescriptlang.org/"}
         alt={"img-typescript-logo"}
-        technology="Typesript"
+        technology="Typescript"
         size={80}
       />,
       <Skill
@@ -1002,7 +1002,7 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         src={"/images/technologies/typescript.png"}
         href={"https://www.typescriptlang.org/"}
         alt={"img-typescript-logo"}
-        technology="Typesript"
+        technology="Typescript"
         size={80}
       />,
       <Skill
