@@ -920,10 +920,10 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
     isFavorite: false,
     techs: [
       <Skill
-        src={"/images/technologies/javascript-2752148-2284965.png"}
-        href={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
-        alt={"img-javascript-logo"}
-        technology="Javascript"
+        src={"/images/technologies/typescript.png"}
+        href={"https://www.typescriptlang.org/"}
+        alt={"img-typescript-logo"}
+        technology="Typesript"
         size={80}
       />,
       <Skill
@@ -966,6 +966,50 @@ The app is built with Monaco Editor, the same editor that VS Code uses.`,
         href={"https://tailwindcss.com/"}
         alt={"img-tailwind-logo"}
         technology="Tailwindcss"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/firebase.png"}
+        href={
+          "https://firebase.google.com/?gclid=CjwKCAjw2rmWBhB4EiwAiJ0mtWoGToqePmnPSACjkRRFf7J2n6JzXoJkwSj88GymbZw6Bd6EgSysExoCT2AQAvD_BwE&gclsrc=aw.ds"
+        }
+        alt={"img-firebase-logo"}
+        technology="Firebase"
+        size={80}
+        needPadding
+      />,
+    ],
+  },
+  {
+    id: 27,
+    name: "E-commerce App",
+    src: "/images/projects/ecommerceapp.png",
+    alt: "img-ecommerceapp",
+    description: "E-commerce app backed by Firebase and Typescript programmed.",
+    preview: "",
+    repo: "https://github.com/francescoalterio/e-commerce-app",
+    coreTechs: ["Typescript", "React Native"],
+    isFavorite: false,
+    techs: [
+      <Skill
+        src={"/images/technologies/react-logo.png"}
+        href={"https://reactnative.dev/"}
+        alt={"img-reactnative-logo"}
+        technology="React Native"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/typescript.png"}
+        href={"https://www.typescriptlang.org/"}
+        alt={"img-typescript-logo"}
+        technology="Typesript"
+        size={80}
+      />,
+      <Skill
+        src={"/images/technologies/react-navigation.png"}
+        href={"https://reactnavigation.org/"}
+        alt={"img-reactnavigation-logo"}
+        technology="React Navigation"
         size={80}
       />,
       <Skill
